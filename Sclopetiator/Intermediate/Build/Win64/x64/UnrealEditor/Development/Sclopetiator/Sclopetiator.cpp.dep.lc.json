@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\source\\sclopetiator\\sclopetiator.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\intermediate\\build\\win64\\x64\\sclopetiatoreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sclopetiator\\definitions.sclopetiator.h",
+            "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\source\\sclopetiator\\sclopetiator.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

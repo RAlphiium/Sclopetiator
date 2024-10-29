@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\sclopetiatorgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\intermediate\\build\\win64\\x64\\sclopetiatoreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sclopetiator\\definitions.sclopetiator.h",
+            "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\source\\sclopetiator\\sclopetiatorgamemode.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\sclopetiatorgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

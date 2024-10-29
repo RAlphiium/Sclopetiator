@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Sclopetiator",
+			"Path": "..\\Source\\Sclopetiator.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SclopetiatorEditor",
+			"Path": "..\\Source\\SclopetiatorEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
