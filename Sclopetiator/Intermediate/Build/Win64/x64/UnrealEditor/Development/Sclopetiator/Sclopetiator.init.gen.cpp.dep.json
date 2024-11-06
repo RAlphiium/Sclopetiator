@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\sclopetiator.init.gen.cpp",
+        "Source": "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\sclopetiator.init.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\intermediate\\build\\win64\\x64\\sclopetiatoreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\x64\\sclopetiatoreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\itsno\\onedrive\\desktop\\unreal engine\\sclopetiator\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sclopetiator\\definitions.sclopetiator.h"
+            "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sclopetiator\\definitions.sclopetiator.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

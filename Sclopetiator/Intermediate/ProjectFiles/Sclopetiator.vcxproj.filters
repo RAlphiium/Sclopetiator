@@ -78,12 +78,6 @@
     <ClInclude Include="..\..\Source\Sclopetiator\TP_WeaponComponent.h">
       <Filter>Source\Sclopetiator</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\Sclopetiator\VS_BaseGun.cpp">
-      <Filter>Source\Sclopetiator</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Sclopetiator\VS_BaseGun.h">
-      <Filter>Source\Sclopetiator</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\Sclopetiator\VS_BaseItem.cpp">
       <Filter>Source\Sclopetiator</Filter>
     </ClCompile>

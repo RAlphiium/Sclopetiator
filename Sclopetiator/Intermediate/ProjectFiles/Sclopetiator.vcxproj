@@ -67,7 +67,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D0A64EEE-FB6D-32B7-97DE-1CD1F5E19918}</ProjectGuid>
+    <ProjectGuid>{87E06899-1FB7-30E2-BE8F-1D0C5587FFBE}</ProjectGuid>
     <RootNamespace>Sclopetiator</RootNamespace>
   </PropertyGroup>
   <Import Project="UECommon.props" />
@@ -287,10 +287,6 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\Sclopetiator\TP_WeaponComponent.h"/>
-    <ClCompile Include="..\..\Source\Sclopetiator\VS_BaseGun.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\Sclopetiator\VS_BaseGun.h"/>
     <ClCompile Include="..\..\Source\Sclopetiator\VS_BaseItem.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>

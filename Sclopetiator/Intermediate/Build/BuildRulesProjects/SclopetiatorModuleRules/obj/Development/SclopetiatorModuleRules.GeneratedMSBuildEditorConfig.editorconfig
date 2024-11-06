@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SclopetiatorModuleRules
-build_property.ProjectDir = C:\Users\itsno\OneDrive\Desktop\Unreal Engine\Sclopetiator\Intermediate\Build\BuildRulesProjects\SclopetiatorModuleRules\
+build_property.ProjectDir = C:\Users\itsno\source\repos\Sclopetiator\Sclopetiator\Intermediate\Build\BuildRulesProjects\SclopetiatorModuleRules\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

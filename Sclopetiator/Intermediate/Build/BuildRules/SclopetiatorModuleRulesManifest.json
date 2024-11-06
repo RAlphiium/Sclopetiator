@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\itsno\\OneDrive\\Desktop\\Unreal Engine\\Sclopetiator\\Source\\Sclopetiator\\Sclopetiator.Build.cs",
-		"C:\\Users\\itsno\\OneDrive\\Desktop\\Unreal Engine\\Sclopetiator\\Source\\Sclopetiator.Target.cs",
-		"C:\\Users\\itsno\\OneDrive\\Desktop\\Unreal Engine\\Sclopetiator\\Source\\SclopetiatorEditor.Target.cs"
+		"C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Source\\Sclopetiator\\Sclopetiator.Build.cs",
+		"C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Source\\Sclopetiator.Target.cs",
+		"C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Source\\SclopetiatorEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.4"
 }

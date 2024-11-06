@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wj+MsqMoMz4=",
+  "dgSpecHash": "KGN0EuxTacM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\itsno\\OneDrive\\Desktop\\Unreal Engine\\Sclopetiator\\Intermediate\\Build\\BuildRulesProjects\\SclopetiatorModuleRules\\SclopetiatorModuleRules.csproj",
+  "projectFilePath": "C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Intermediate\\Build\\BuildRulesProjects\\SclopetiatorModuleRules\\SclopetiatorModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\itsno\\.nuget\\packages\\bitfaster.caching\\2.4.1\\bitfaster.caching.2.4.1.nupkg.sha512",
     "C:\\Users\\itsno\\.nuget\\packages\\blake3\\0.5.1\\blake3.0.5.1.nupkg.sha512",

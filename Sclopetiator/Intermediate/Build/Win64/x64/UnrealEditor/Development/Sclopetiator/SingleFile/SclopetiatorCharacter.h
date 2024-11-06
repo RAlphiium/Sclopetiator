@@ -1,1 +1,1 @@
-#include "C:/Users/itsno/OneDrive/Desktop/Unreal Engine/Sclopetiator/Source/Sclopetiator/SclopetiatorCharacter.h"
+#include "C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Source/Sclopetiator/SclopetiatorCharacter.h"

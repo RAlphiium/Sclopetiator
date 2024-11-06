@@ -1,1 +1,0 @@
-#include "C:/Users/itsno/OneDrive/Desktop/Unreal Engine/Sclopetiator/Source/Sclopetiator/VS_BaseItem.h"

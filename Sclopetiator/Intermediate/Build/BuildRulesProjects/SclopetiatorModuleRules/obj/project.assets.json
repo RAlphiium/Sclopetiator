@@ -8567,11 +8567,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\itsno\\OneDrive\\Desktop\\Unreal Engine\\Sclopetiator\\Intermediate\\Build\\BuildRulesProjects\\SclopetiatorModuleRules\\SclopetiatorModuleRules.csproj",
+      "projectUniqueName": "C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Intermediate\\Build\\BuildRulesProjects\\SclopetiatorModuleRules\\SclopetiatorModuleRules.csproj",
       "projectName": "SclopetiatorModuleRules",
-      "projectPath": "C:\\Users\\itsno\\OneDrive\\Desktop\\Unreal Engine\\Sclopetiator\\Intermediate\\Build\\BuildRulesProjects\\SclopetiatorModuleRules\\SclopetiatorModuleRules.csproj",
+      "projectPath": "C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Intermediate\\Build\\BuildRulesProjects\\SclopetiatorModuleRules\\SclopetiatorModuleRules.csproj",
       "packagesPath": "C:\\Users\\itsno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\itsno\\OneDrive\\Desktop\\Unreal Engine\\Sclopetiator\\Intermediate\\Build\\BuildRulesProjects\\SclopetiatorModuleRules\\obj\\",
+      "outputPath": "C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Intermediate\\Build\\BuildRulesProjects\\SclopetiatorModuleRules\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\itsno\\AppData\\Roaming\\NuGet\\NuGet.Config",
