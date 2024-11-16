@@ -25,7 +25,6 @@
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Base_Actors/BP_BaseEnemy.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_MeleeEnemy.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Bullet.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Base_Actors/BP_Shotgun.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Shotgun.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Shotgun/Material.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Shotgun/Material_001.uasset",
@@ -33,9 +32,6 @@
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Shotgun/Material_003.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Shotgun/Material_004.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Shotgun/Material_005.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Pistol/untitled_Skeleton.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Pistol/untitled_PhysicsAsset.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Pistol/untitled.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/FirstPersonArms/Character/Mesh/SK_Mannequin_Arms.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Pistol/Glock17.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/E/3N/6IZQX0ZRTJFWPLLSRBTEV8.uasset",
@@ -48,7 +44,12 @@
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Shotgun/Ithaca_M37_Skeleton.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/8/2O/XG43KA4G45OY8EWOSDNHU0.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/A/OU/UKB3NF4UR3Y74X5KM02GO9.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/FirstPersonArms/Character/Mesh/SK_Mannequin_Arms_Skeleton.uasset"
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/FirstPersonArms/Character/Mesh/SK_Mannequin_Arms_Skeleton.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Main.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Base_Actors/BP_Shotgun.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Pistol/untitled_Skeleton.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Pistol/untitled_PhysicsAsset.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Pistol/untitled.uasset"
 			]
 		}
 	]
