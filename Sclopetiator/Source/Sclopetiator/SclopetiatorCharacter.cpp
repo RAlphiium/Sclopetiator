@@ -67,10 +67,31 @@ void ASclopetiatorCharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 	}
 }
 
-//void ASclopetiatorCharacter::AttachGun()
-//{
-//	
-//}
+void ASclopetiatorCharacter::UpdateHealth_Internal(int NewHealth)
+{
+	this->Health = NewHealth;
+	OnHealthUpdated.Broadcast(Health);
+}
+
+void ASclopetiatorCharacter::HealthModified_Internal(int DMG)
+{
+	this->Health = this->Health - DMG;
+	OnHealthUpdated.Broadcast(Health);
+	if (this->Health <= 0) {
+		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Dead.")); //Test
+	}
+}
+
+void ASclopetiatorCharacter::UpdateHealth_Implementation(int NewHealth)
+{
+	UpdateHealth_Internal(NewHealth);
+}
+
+void ASclopetiatorCharacter::HealthModified_Implementation(int DMG)
+{
+	HealthModified_Internal(DMG);
+}
+
 
 void ASclopetiatorCharacter::Move(const FInputActionValue& Value)
 {

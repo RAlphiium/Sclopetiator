@@ -16,6 +16,8 @@ class UInputAction;
 class UInputMappingContext;
 struct FInputActionValue;
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHealthUpdatedSignature, int, newHealth);
+
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 UCLASS(config=Game)
@@ -71,6 +73,34 @@ public:
 
 	/*UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AVS_BaseGun* CurrentGun;*/
+
+
+public:
+	//Attributes
+	UPROPERTY(BlueprintCallable, BlueprintAssignable)
+	FOnHealthUpdatedSignature OnHealthUpdated;
+
+	//Methods
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void UpdateHealth(int NewHealth);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void HealthModified(int DMG);
+
+protected:
+	//Attributes
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int ScorePoints;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int Health;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Speed;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Luck;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool isAiming;
+	//Methods
+	virtual void UpdateHealth_Internal(int NewHealth);
+	virtual void HealthModified_Internal(int DMG);
 
 //public:
 //	virtual void AttachGun();
