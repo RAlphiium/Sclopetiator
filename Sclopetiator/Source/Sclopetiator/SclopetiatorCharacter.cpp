@@ -92,7 +92,6 @@ void ASclopetiatorCharacter::HealthModified_Implementation(int DMG)
 	HealthModified_Internal(DMG);
 }
 
-
 void ASclopetiatorCharacter::Move(const FInputActionValue& Value)
 {
 	// input is a Vector2D

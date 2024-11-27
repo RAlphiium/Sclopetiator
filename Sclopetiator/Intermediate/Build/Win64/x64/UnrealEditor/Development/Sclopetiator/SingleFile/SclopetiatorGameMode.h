@@ -1,0 +1,1 @@
+#include "C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Source/Sclopetiator/SclopetiatorGameMode.h"

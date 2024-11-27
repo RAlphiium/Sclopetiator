@@ -5,7 +5,19 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/StarterContent/Architecture/Floor_400x400.uasset"
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_EnemySpawner.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Pistol.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Shotgun.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Shotgun.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Images/Shotgun.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/GI_ProgressionProject.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Base_Actors/BP_BaseGun.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/FirstPerson/Blueprints/BP_FirstPersonPlayerController.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Pistol.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Images/Background.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Images/ShotgunBullet.uasset"
 			]
 		}
 	]

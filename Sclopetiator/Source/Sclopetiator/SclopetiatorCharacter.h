@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
-//#include "VS_BaseGun.h"
+#include "GameEngine.generated.h"
 
 #include "SclopetiatorCharacter.generated.h"
 
