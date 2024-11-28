@@ -33,6 +33,11 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 
 
 #define FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual bool AnyFloatChanges_Implementation(float param1, float param2); \
+	virtual bool AnyIntegerChanges_Implementation(int32 param1, int32 param2); \
+	virtual bool IsStatPointsValid_Implementation(); \
+	virtual bool IsHealthValid_Implementation(); \
+	virtual bool CheckStatPoints_Implementation(); \
 	virtual void DecreasePlayerLuck_Implementation(); \
 	virtual void IncreasePlayerLuck_Implementation(); \
 	virtual void DecreasePlayerMovement_Implementation(); \
@@ -45,6 +50,11 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	virtual void UpdatePlayer_Implementation(); \
 	virtual void UpdateVariables_Implementation(); \
 	virtual void RewriteStats_Implementation(); \
+	DECLARE_FUNCTION(execAnyFloatChanges); \
+	DECLARE_FUNCTION(execAnyIntegerChanges); \
+	DECLARE_FUNCTION(execIsStatPointsValid); \
+	DECLARE_FUNCTION(execIsHealthValid); \
+	DECLARE_FUNCTION(execCheckStatPoints); \
 	DECLARE_FUNCTION(execDecreasePlayerLuck); \
 	DECLARE_FUNCTION(execIncreasePlayerLuck); \
 	DECLARE_FUNCTION(execDecreasePlayerMovement); \

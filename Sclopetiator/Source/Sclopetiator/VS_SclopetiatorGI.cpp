@@ -98,6 +98,32 @@ void UVS_SclopetiatorGI::DecreasePlayerLuck_Implementation()
 	DecreasePlayerLuck_Internal();
 }
 
+bool UVS_SclopetiatorGI::CheckStatPoints_Implementation()
+{
+	return CheckStatPoints_Internal();
+}
+
+bool UVS_SclopetiatorGI::IsHealthValid_Implementation()
+{
+	return IsHealthValid_Internal();
+}
+
+bool UVS_SclopetiatorGI::IsStatPointsValid_Implementation()
+{
+	return IsStatPointsValid_Internal();
+}
+
+bool UVS_SclopetiatorGI::AnyIntegerChanges_Implementation(int param1, int param2)
+{
+	return AnyIntegerChanges_Internal(param1, param2);
+}
+
+bool UVS_SclopetiatorGI::AnyFloatChanges_Implementation(float param1, float param2)
+{
+	return AnyFloatChanges_Internal(param1, param2);
+}
+
+
 void UVS_SclopetiatorGI::RewriteStats_Internal()
 {
 	UpdateVariables();
@@ -166,4 +192,55 @@ void UVS_SclopetiatorGI::IncreasePlayerLuck_Internal()
 void UVS_SclopetiatorGI::DecreasePlayerLuck_Internal()
 {
 	this->MODPlayerStats.Luck = this->MODPlayerStats.Luck - 5.f;
+}
+
+bool UVS_SclopetiatorGI::CheckStatPoints_Internal()
+{
+	if (this->MODStatPoints > 0) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+bool UVS_SclopetiatorGI::IsHealthValid_Internal()
+{
+	if (this->MODPlayerStats.Health >= 5 || this->MODPlayerStats.Health <= 0) {
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+
+bool UVS_SclopetiatorGI::IsStatPointsValid_Internal()
+{
+	if (this->MODStatPoints < this->StatPoints) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+bool UVS_SclopetiatorGI::AnyIntegerChanges_Internal(int param1, int param2)
+{
+	if (param1 != param2) {
+		return true;
+	}
+	else {
+		return false;
+	}
+
+}
+
+bool UVS_SclopetiatorGI::AnyFloatChanges_Internal(float param1, float param2)
+{
+	if (param1 != param2) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }

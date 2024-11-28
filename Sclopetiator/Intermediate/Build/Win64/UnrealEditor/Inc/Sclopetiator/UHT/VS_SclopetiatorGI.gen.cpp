@@ -220,6 +220,213 @@ void FOnScorePointsModified_DelegateWrapper(const FMulticastScriptDelegate& OnSc
 }
 // End Delegate FOnScorePointsModified
 
+// Begin Class UVS_SclopetiatorGI Function AnyFloatChanges
+struct VS_SclopetiatorGI_eventAnyFloatChanges_Parms
+{
+	float param1;
+	float param2;
+	bool ReturnValue;
+
+	/** Constructor, initializes return property only **/
+	VS_SclopetiatorGI_eventAnyFloatChanges_Parms()
+		: ReturnValue(false)
+	{
+	}
+};
+static FName NAME_UVS_SclopetiatorGI_AnyFloatChanges = FName(TEXT("AnyFloatChanges"));
+bool UVS_SclopetiatorGI::AnyFloatChanges(float param1, float param2)
+{
+	VS_SclopetiatorGI_eventAnyFloatChanges_Parms Parms;
+	Parms.param1=param1;
+	Parms.param2=param2;
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_AnyFloatChanges),&Parms);
+	return !!Parms.ReturnValue;
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_param1;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_param2;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::NewProp_param1 = { "param1", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(VS_SclopetiatorGI_eventAnyFloatChanges_Parms, param1), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::NewProp_param2 = { "param2", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(VS_SclopetiatorGI_eventAnyFloatChanges_Parms, param2), METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((VS_SclopetiatorGI_eventAnyFloatChanges_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(VS_SclopetiatorGI_eventAnyFloatChanges_Parms), &Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::NewProp_param1,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::NewProp_param2,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "AnyFloatChanges", nullptr, nullptr, Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::PropPointers), sizeof(VS_SclopetiatorGI_eventAnyFloatChanges_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::Function_MetaDataParams) };
+static_assert(sizeof(VS_SclopetiatorGI_eventAnyFloatChanges_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execAnyFloatChanges)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_param1);
+	P_GET_PROPERTY(FFloatProperty,Z_Param_param2);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->AnyFloatChanges_Implementation(Z_Param_param1,Z_Param_param2);
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function AnyFloatChanges
+
+// Begin Class UVS_SclopetiatorGI Function AnyIntegerChanges
+struct VS_SclopetiatorGI_eventAnyIntegerChanges_Parms
+{
+	int32 param1;
+	int32 param2;
+	bool ReturnValue;
+
+	/** Constructor, initializes return property only **/
+	VS_SclopetiatorGI_eventAnyIntegerChanges_Parms()
+		: ReturnValue(false)
+	{
+	}
+};
+static FName NAME_UVS_SclopetiatorGI_AnyIntegerChanges = FName(TEXT("AnyIntegerChanges"));
+bool UVS_SclopetiatorGI::AnyIntegerChanges(int32 param1, int32 param2)
+{
+	VS_SclopetiatorGI_eventAnyIntegerChanges_Parms Parms;
+	Parms.param1=param1;
+	Parms.param2=param2;
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_AnyIntegerChanges),&Parms);
+	return !!Parms.ReturnValue;
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_param1;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_param2;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::NewProp_param1 = { "param1", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(VS_SclopetiatorGI_eventAnyIntegerChanges_Parms, param1), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::NewProp_param2 = { "param2", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(VS_SclopetiatorGI_eventAnyIntegerChanges_Parms, param2), METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((VS_SclopetiatorGI_eventAnyIntegerChanges_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(VS_SclopetiatorGI_eventAnyIntegerChanges_Parms), &Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::NewProp_param1,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::NewProp_param2,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "AnyIntegerChanges", nullptr, nullptr, Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::PropPointers), sizeof(VS_SclopetiatorGI_eventAnyIntegerChanges_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::Function_MetaDataParams) };
+static_assert(sizeof(VS_SclopetiatorGI_eventAnyIntegerChanges_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execAnyIntegerChanges)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_param1);
+	P_GET_PROPERTY(FIntProperty,Z_Param_param2);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->AnyIntegerChanges_Implementation(Z_Param_param1,Z_Param_param2);
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function AnyIntegerChanges
+
+// Begin Class UVS_SclopetiatorGI Function CheckStatPoints
+struct VS_SclopetiatorGI_eventCheckStatPoints_Parms
+{
+	bool ReturnValue;
+
+	/** Constructor, initializes return property only **/
+	VS_SclopetiatorGI_eventCheckStatPoints_Parms()
+		: ReturnValue(false)
+	{
+	}
+};
+static FName NAME_UVS_SclopetiatorGI_CheckStatPoints = FName(TEXT("CheckStatPoints"));
+bool UVS_SclopetiatorGI::CheckStatPoints()
+{
+	VS_SclopetiatorGI_eventCheckStatPoints_Parms Parms;
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_CheckStatPoints),&Parms);
+	return !!Parms.ReturnValue;
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Functions:\n" },
+#endif
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Functions:" },
+#endif
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((VS_SclopetiatorGI_eventCheckStatPoints_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(VS_SclopetiatorGI_eventCheckStatPoints_Parms), &Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "CheckStatPoints", nullptr, nullptr, Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::PropPointers), sizeof(VS_SclopetiatorGI_eventCheckStatPoints_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::Function_MetaDataParams) };
+static_assert(sizeof(VS_SclopetiatorGI_eventCheckStatPoints_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execCheckStatPoints)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->CheckStatPoints_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function CheckStatPoints
+
 // Begin Class UVS_SclopetiatorGI Function DecreasePlayerLuck
 static FName NAME_UVS_SclopetiatorGI_DecreasePlayerLuck = FName(TEXT("DecreasePlayerLuck"));
 void UVS_SclopetiatorGI::DecreasePlayerLuck()
@@ -516,6 +723,124 @@ DEFINE_FUNCTION(UVS_SclopetiatorGI::execIncrementStatPoints)
 }
 // End Class UVS_SclopetiatorGI Function IncrementStatPoints
 
+// Begin Class UVS_SclopetiatorGI Function IsHealthValid
+struct VS_SclopetiatorGI_eventIsHealthValid_Parms
+{
+	bool ReturnValue;
+
+	/** Constructor, initializes return property only **/
+	VS_SclopetiatorGI_eventIsHealthValid_Parms()
+		: ReturnValue(false)
+	{
+	}
+};
+static FName NAME_UVS_SclopetiatorGI_IsHealthValid = FName(TEXT("IsHealthValid"));
+bool UVS_SclopetiatorGI::IsHealthValid()
+{
+	VS_SclopetiatorGI_eventIsHealthValid_Parms Parms;
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_IsHealthValid),&Parms);
+	return !!Parms.ReturnValue;
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((VS_SclopetiatorGI_eventIsHealthValid_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(VS_SclopetiatorGI_eventIsHealthValid_Parms), &Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "IsHealthValid", nullptr, nullptr, Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::PropPointers), sizeof(VS_SclopetiatorGI_eventIsHealthValid_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::Function_MetaDataParams) };
+static_assert(sizeof(VS_SclopetiatorGI_eventIsHealthValid_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execIsHealthValid)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->IsHealthValid_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function IsHealthValid
+
+// Begin Class UVS_SclopetiatorGI Function IsStatPointsValid
+struct VS_SclopetiatorGI_eventIsStatPointsValid_Parms
+{
+	bool ReturnValue;
+
+	/** Constructor, initializes return property only **/
+	VS_SclopetiatorGI_eventIsStatPointsValid_Parms()
+		: ReturnValue(false)
+	{
+	}
+};
+static FName NAME_UVS_SclopetiatorGI_IsStatPointsValid = FName(TEXT("IsStatPointsValid"));
+bool UVS_SclopetiatorGI::IsStatPointsValid()
+{
+	VS_SclopetiatorGI_eventIsStatPointsValid_Parms Parms;
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_IsStatPointsValid),&Parms);
+	return !!Parms.ReturnValue;
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((VS_SclopetiatorGI_eventIsStatPointsValid_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(VS_SclopetiatorGI_eventIsStatPointsValid_Parms), &Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "IsStatPointsValid", nullptr, nullptr, Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::PropPointers), sizeof(VS_SclopetiatorGI_eventIsStatPointsValid_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::Function_MetaDataParams) };
+static_assert(sizeof(VS_SclopetiatorGI_eventIsStatPointsValid_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execIsStatPointsValid)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->IsStatPointsValid_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function IsStatPointsValid
+
 // Begin Class UVS_SclopetiatorGI Function RefreshPlayerHealth
 static FName NAME_UVS_SclopetiatorGI_RefreshPlayerHealth = FName(TEXT("RefreshPlayerHealth"));
 void UVS_SclopetiatorGI::RefreshPlayerHealth()
@@ -681,6 +1006,9 @@ void UVS_SclopetiatorGI::StaticRegisterNativesUVS_SclopetiatorGI()
 {
 	UClass* Class = UVS_SclopetiatorGI::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "AnyFloatChanges", &UVS_SclopetiatorGI::execAnyFloatChanges },
+		{ "AnyIntegerChanges", &UVS_SclopetiatorGI::execAnyIntegerChanges },
+		{ "CheckStatPoints", &UVS_SclopetiatorGI::execCheckStatPoints },
 		{ "DecreasePlayerLuck", &UVS_SclopetiatorGI::execDecreasePlayerLuck },
 		{ "DecreasePlayerMovement", &UVS_SclopetiatorGI::execDecreasePlayerMovement },
 		{ "DecrementPlayerHealth", &UVS_SclopetiatorGI::execDecrementPlayerHealth },
@@ -689,6 +1017,8 @@ void UVS_SclopetiatorGI::StaticRegisterNativesUVS_SclopetiatorGI()
 		{ "IncreasePlayerMovement", &UVS_SclopetiatorGI::execIncreasePlayerMovement },
 		{ "IncrementPlayerHealth", &UVS_SclopetiatorGI::execIncrementPlayerHealth },
 		{ "IncrementStatPoints", &UVS_SclopetiatorGI::execIncrementStatPoints },
+		{ "IsHealthValid", &UVS_SclopetiatorGI::execIsHealthValid },
+		{ "IsStatPointsValid", &UVS_SclopetiatorGI::execIsStatPointsValid },
 		{ "RefreshPlayerHealth", &UVS_SclopetiatorGI::execRefreshPlayerHealth },
 		{ "RewriteStats", &UVS_SclopetiatorGI::execRewriteStats },
 		{ "UpdatePlayer", &UVS_SclopetiatorGI::execUpdatePlayer },
@@ -824,6 +1154,9 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges, "AnyFloatChanges" }, // 3305065623
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges, "AnyIntegerChanges" }, // 2932819926
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints, "CheckStatPoints" }, // 565627118
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreasePlayerLuck, "DecreasePlayerLuck" }, // 2683311545
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreasePlayerMovement, "DecreasePlayerMovement" }, // 1174659643
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecrementPlayerHealth, "DecrementPlayerHealth" }, // 1243008120
@@ -832,6 +1165,8 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreasePlayerMovement, "IncreasePlayerMovement" }, // 644459040
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncrementPlayerHealth, "IncrementPlayerHealth" }, // 128978268
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncrementStatPoints, "IncrementStatPoints" }, // 478417504
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid, "IsHealthValid" }, // 2452959550
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid, "IsStatPointsValid" }, // 563155562
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshPlayerHealth, "RefreshPlayerHealth" }, // 3001482739
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_RewriteStats, "RewriteStats" }, // 3172200059
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_UpdatePlayer, "UpdatePlayer" }, // 1989418654
@@ -916,10 +1251,10 @@ struct Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetia
 		{ FFirearmStats::StaticStruct, Z_Construct_UScriptStruct_FFirearmStats_Statics::NewStructOps, TEXT("FirearmStats"), &Z_Registration_Info_UScriptStruct_FirearmStats, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FFirearmStats), 1704484502U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UVS_SclopetiatorGI, UVS_SclopetiatorGI::StaticClass, TEXT("UVS_SclopetiatorGI"), &Z_Registration_Info_UClass_UVS_SclopetiatorGI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVS_SclopetiatorGI), 2311805558U) },
+		{ Z_Construct_UClass_UVS_SclopetiatorGI, UVS_SclopetiatorGI::StaticClass, TEXT("UVS_SclopetiatorGI"), &Z_Registration_Info_UClass_UVS_SclopetiatorGI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVS_SclopetiatorGI), 753854779U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_230765775(TEXT("/Script/Sclopetiator"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_1868300795(TEXT("/Script/Sclopetiator"),
 	Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ScriptStructInfo),
 	nullptr, 0);

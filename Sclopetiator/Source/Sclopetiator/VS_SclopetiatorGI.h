@@ -44,7 +44,7 @@ public:
 	UPROPERTY(BlueprintCallable, BlueprintAssignable)
 	FOnScorePointsModified OnScorePointsModified;
 
-	//Functions:
+	//Methods:
 	
 	//Rewrite Stats
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -85,6 +85,19 @@ public:
 	void IncreasePlayerLuck();
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void DecreasePlayerLuck();
+
+	//Functions:
+
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	bool CheckStatPoints();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	bool IsHealthValid();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	bool IsStatPointsValid();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	bool AnyIntegerChanges(int param1, int param2);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	bool AnyFloatChanges(float param1, float param2);
 
 protected:
 	//Attributes:
@@ -127,7 +140,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FFirearmStats MODRifleStats;
 
-	//Functions:
+	//Methods:
 
 	//Rewrite Stats
 	virtual void RewriteStats_Internal();
@@ -156,4 +169,11 @@ protected:
 	//PlayerLuck Functions
 	virtual void IncreasePlayerLuck_Internal();
 	virtual void DecreasePlayerLuck_Internal();
+
+	//Functions:
+	virtual bool CheckStatPoints_Internal();
+	virtual bool IsHealthValid_Internal();
+	virtual bool IsStatPointsValid_Internal();
+	virtual bool AnyIntegerChanges_Internal(int param1, int param2);
+	virtual bool AnyFloatChanges_Internal(float param1, float param2);
 };
