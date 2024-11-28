@@ -1,5 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Kismet/GameplayStatics.h"
 #include "SclopetiatorPlayerController.h"
 #include "VS_BaseItem.h"
 
@@ -23,6 +24,8 @@ void AVS_BaseItem::BeginPlay()
 {
 	Super::BeginPlay();
 
+	/*Player = Cast<ASclopetiatorCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, Player->GetName());*/ //Test
 }
 
 // Called every frame

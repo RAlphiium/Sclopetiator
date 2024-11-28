@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "Logging/LogMacros.h"
 #include "GameEngine.generated.h"
+#include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 #include "SclopetiatorCharacter.generated.h"
 
@@ -32,6 +34,10 @@ class ASclopetiatorCharacter : public ACharacter
 	/** First person camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FirstPersonCameraComponent;
+
+	//Characte Movement Component
+	//UPROPERTY(EditAnywhere, Category = "Character Movement", meta = (AllowPrivateAccess = "True"))
+	//UCharacterMovementComponent* Movement;
 
 	/** Jump Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
@@ -82,9 +88,21 @@ public:
 
 	//Methods
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void ScorePointsModified(int IncomingScorePoints);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void UpdateHealth(int NewHealth);
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void UpdateMovement(float AddedSpeed);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void UpdateLuck(float AddedLuck);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void HealthModified(int DMG);
+
+	//Getters
+	int GetHealth();
+	float GetSpeed();
+	float GetLuck();
+	bool GetIsAiming();
 
 protected:
 	//Attributes
@@ -99,7 +117,10 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool isAiming;
 	//Methods
+	virtual void ScorePointsModified_Internal(int IncomingScorePoints);
 	virtual void UpdateHealth_Internal(int NewHealth);
+	virtual void UpdateMovement_Internal(float AddedSpeed);
+	virtual void UpdateLuck_Internal(float AddedLuck);
 	virtual void HealthModified_Internal(int DMG);
 
 //public:

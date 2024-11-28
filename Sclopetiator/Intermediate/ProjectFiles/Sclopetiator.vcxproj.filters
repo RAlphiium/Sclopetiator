@@ -84,5 +84,17 @@
     <ClInclude Include="..\..\Source\Sclopetiator\VS_BaseItem.h">
       <Filter>Source\Sclopetiator</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Sclopetiator\VS_SclopetiatorGI.cpp">
+      <Filter>Source\Sclopetiator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sclopetiator\VS_SclopetiatorGI.h">
+      <Filter>Source\Sclopetiator</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Sclopetiator\VS_StatPoint.cpp">
+      <Filter>Source\Sclopetiator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sclopetiator\VS_StatPoint.h">
+      <Filter>Source\Sclopetiator</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

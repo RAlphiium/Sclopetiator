@@ -113,6 +113,61 @@ DEFINE_FUNCTION(ASclopetiatorCharacter::execHealthModified)
 }
 // End Class ASclopetiatorCharacter Function HealthModified
 
+// Begin Class ASclopetiatorCharacter Function ScorePointsModified
+struct SclopetiatorCharacter_eventScorePointsModified_Parms
+{
+	int32 IncomingScorePoints;
+};
+static FName NAME_ASclopetiatorCharacter_ScorePointsModified = FName(TEXT("ScorePointsModified"));
+void ASclopetiatorCharacter::ScorePointsModified(int32 IncomingScorePoints)
+{
+	SclopetiatorCharacter_eventScorePointsModified_Parms Parms;
+	Parms.IncomingScorePoints=IncomingScorePoints;
+	ProcessEvent(FindFunctionChecked(NAME_ASclopetiatorCharacter_ScorePointsModified),&Parms);
+}
+struct Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Methods\n" },
+#endif
+		{ "ModuleRelativePath", "SclopetiatorCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Methods" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FIntPropertyParams NewProp_IncomingScorePoints;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::NewProp_IncomingScorePoints = { "IncomingScorePoints", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SclopetiatorCharacter_eventScorePointsModified_Parms, IncomingScorePoints), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::NewProp_IncomingScorePoints,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASclopetiatorCharacter, nullptr, "ScorePointsModified", nullptr, nullptr, Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::PropPointers), sizeof(SclopetiatorCharacter_eventScorePointsModified_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::Function_MetaDataParams) };
+static_assert(sizeof(SclopetiatorCharacter_eventScorePointsModified_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ASclopetiatorCharacter::execScorePointsModified)
+{
+	P_GET_PROPERTY(FIntProperty,Z_Param_IncomingScorePoints);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->ScorePointsModified_Implementation(Z_Param_IncomingScorePoints);
+	P_NATIVE_END;
+}
+// End Class ASclopetiatorCharacter Function ScorePointsModified
+
 // Begin Class ASclopetiatorCharacter Function UpdateHealth
 struct SclopetiatorCharacter_eventUpdateHealth_Parms
 {
@@ -129,13 +184,7 @@ struct Z_Construct_UFunction_ASclopetiatorCharacter_UpdateHealth_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//Methods\n" },
-#endif
 		{ "ModuleRelativePath", "SclopetiatorCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Methods" },
-#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FIntPropertyParams NewProp_NewHealth;
@@ -168,13 +217,114 @@ DEFINE_FUNCTION(ASclopetiatorCharacter::execUpdateHealth)
 }
 // End Class ASclopetiatorCharacter Function UpdateHealth
 
+// Begin Class ASclopetiatorCharacter Function UpdateLuck
+struct SclopetiatorCharacter_eventUpdateLuck_Parms
+{
+	float AddedLuck;
+};
+static FName NAME_ASclopetiatorCharacter_UpdateLuck = FName(TEXT("UpdateLuck"));
+void ASclopetiatorCharacter::UpdateLuck(float AddedLuck)
+{
+	SclopetiatorCharacter_eventUpdateLuck_Parms Parms;
+	Parms.AddedLuck=AddedLuck;
+	ProcessEvent(FindFunctionChecked(NAME_ASclopetiatorCharacter_UpdateLuck),&Parms);
+}
+struct Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "SclopetiatorCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_AddedLuck;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::NewProp_AddedLuck = { "AddedLuck", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SclopetiatorCharacter_eventUpdateLuck_Parms, AddedLuck), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::NewProp_AddedLuck,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASclopetiatorCharacter, nullptr, "UpdateLuck", nullptr, nullptr, Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::PropPointers), sizeof(SclopetiatorCharacter_eventUpdateLuck_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::Function_MetaDataParams) };
+static_assert(sizeof(SclopetiatorCharacter_eventUpdateLuck_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ASclopetiatorCharacter::execUpdateLuck)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_AddedLuck);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->UpdateLuck_Implementation(Z_Param_AddedLuck);
+	P_NATIVE_END;
+}
+// End Class ASclopetiatorCharacter Function UpdateLuck
+
+// Begin Class ASclopetiatorCharacter Function UpdateMovement
+struct SclopetiatorCharacter_eventUpdateMovement_Parms
+{
+	float AddedSpeed;
+};
+static FName NAME_ASclopetiatorCharacter_UpdateMovement = FName(TEXT("UpdateMovement"));
+void ASclopetiatorCharacter::UpdateMovement(float AddedSpeed)
+{
+	SclopetiatorCharacter_eventUpdateMovement_Parms Parms;
+	Parms.AddedSpeed=AddedSpeed;
+	ProcessEvent(FindFunctionChecked(NAME_ASclopetiatorCharacter_UpdateMovement),&Parms);
+}
+struct Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "SclopetiatorCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_AddedSpeed;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::NewProp_AddedSpeed = { "AddedSpeed", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SclopetiatorCharacter_eventUpdateMovement_Parms, AddedSpeed), METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::NewProp_AddedSpeed,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ASclopetiatorCharacter, nullptr, "UpdateMovement", nullptr, nullptr, Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::PropPointers), sizeof(SclopetiatorCharacter_eventUpdateMovement_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::Function_MetaDataParams), Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::Function_MetaDataParams) };
+static_assert(sizeof(SclopetiatorCharacter_eventUpdateMovement_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ASclopetiatorCharacter::execUpdateMovement)
+{
+	P_GET_PROPERTY(FFloatProperty,Z_Param_AddedSpeed);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->UpdateMovement_Implementation(Z_Param_AddedSpeed);
+	P_NATIVE_END;
+}
+// End Class ASclopetiatorCharacter Function UpdateMovement
+
 // Begin Class ASclopetiatorCharacter
 void ASclopetiatorCharacter::StaticRegisterNativesASclopetiatorCharacter()
 {
 	UClass* Class = ASclopetiatorCharacter::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
 		{ "HealthModified", &ASclopetiatorCharacter::execHealthModified },
+		{ "ScorePointsModified", &ASclopetiatorCharacter::execScorePointsModified },
 		{ "UpdateHealth", &ASclopetiatorCharacter::execUpdateHealth },
+		{ "UpdateLuck", &ASclopetiatorCharacter::execUpdateLuck },
+		{ "UpdateMovement", &ASclopetiatorCharacter::execUpdateMovement },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -300,7 +450,10 @@ struct Z_Construct_UClass_ASclopetiatorCharacter_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ASclopetiatorCharacter_HealthModified, "HealthModified" }, // 541433125
-		{ &Z_Construct_UFunction_ASclopetiatorCharacter_UpdateHealth, "UpdateHealth" }, // 196059728
+		{ &Z_Construct_UFunction_ASclopetiatorCharacter_ScorePointsModified, "ScorePointsModified" }, // 3572608506
+		{ &Z_Construct_UFunction_ASclopetiatorCharacter_UpdateHealth, "UpdateHealth" }, // 3447261328
+		{ &Z_Construct_UFunction_ASclopetiatorCharacter_UpdateLuck, "UpdateLuck" }, // 2716052980
+		{ &Z_Construct_UFunction_ASclopetiatorCharacter_UpdateMovement, "UpdateMovement" }, // 2827752665
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -377,10 +530,10 @@ ASclopetiatorCharacter::~ASclopetiatorCharacter() {}
 struct Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_SclopetiatorCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASclopetiatorCharacter, ASclopetiatorCharacter::StaticClass, TEXT("ASclopetiatorCharacter"), &Z_Registration_Info_UClass_ASclopetiatorCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASclopetiatorCharacter), 285174296U) },
+		{ Z_Construct_UClass_ASclopetiatorCharacter, ASclopetiatorCharacter::StaticClass, TEXT("ASclopetiatorCharacter"), &Z_Registration_Info_UClass_ASclopetiatorCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASclopetiatorCharacter), 1506751273U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_SclopetiatorCharacter_h_3144251409(TEXT("/Script/Sclopetiator"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_SclopetiatorCharacter_h_216057183(TEXT("/Script/Sclopetiator"),
 	Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_SclopetiatorCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_SclopetiatorCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

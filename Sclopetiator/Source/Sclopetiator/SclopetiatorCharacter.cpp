@@ -10,6 +10,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "Engine/LocalPlayer.h"
+#include "VS_SclopetiatorGI.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -35,6 +36,9 @@ ASclopetiatorCharacter::ASclopetiatorCharacter()
 	Mesh1P->CastShadow = false;
 	//Mesh1P->SetRelativeRotation(FRotator(0.9f, -19.19f, 5.2f));
 	Mesh1P->SetRelativeLocation(FVector(-30.f, 0.f, -150.f));
+
+	//Movement = CreateDefaultSubobject<UCharacterMovementComponent>(TEXT("Character Movement"));
+	//Movement->MaxWalkSpeed = 600.f;
 
 }
 
@@ -67,6 +71,26 @@ void ASclopetiatorCharacter::SetupPlayerInputComponent(UInputComponent* PlayerIn
 	}
 }
 
+void ASclopetiatorCharacter::ScorePointsModified_Internal(int IncomingScorePoints)
+{
+	this->ScorePoints = this->ScorePoints + IncomingScorePoints;
+	UVS_SclopetiatorGI* GI = Cast<UVS_SclopetiatorGI>(UGameplayStatics::GetGameInstance(GetWorld()));
+	GI->OnScorePointsModified.Broadcast(this->ScorePoints);
+}
+
+void ASclopetiatorCharacter::UpdateLuck_Internal(float AddedLuck)
+{
+	this->Luck = this->Luck + AddedLuck;
+}
+
+void ASclopetiatorCharacter::UpdateMovement_Internal(float AddedSpeed)
+{
+	this->Speed = this->Speed + AddedSpeed;
+	if (UCharacterMovementComponent* Movement = this->FindComponentByClass<UCharacterMovementComponent>()) {
+		Movement->MaxWalkSpeed = this->Speed;
+	}
+}
+
 void ASclopetiatorCharacter::UpdateHealth_Internal(int NewHealth)
 {
 	this->Health = NewHealth;
@@ -82,6 +106,21 @@ void ASclopetiatorCharacter::HealthModified_Internal(int DMG)
 	}
 }
 
+void ASclopetiatorCharacter::ScorePointsModified_Implementation(int IncomingScorePoints)
+{
+	ScorePointsModified_Internal(IncomingScorePoints);
+}
+
+void ASclopetiatorCharacter::UpdateLuck_Implementation(float AddedLuck)
+{
+	UpdateLuck_Internal(AddedLuck);
+}
+
+void ASclopetiatorCharacter::UpdateMovement_Implementation(float AddedSpeed)
+{
+	UpdateMovement_Internal(AddedSpeed);
+}
+
 void ASclopetiatorCharacter::UpdateHealth_Implementation(int NewHealth)
 {
 	UpdateHealth_Internal(NewHealth);
@@ -90,6 +129,26 @@ void ASclopetiatorCharacter::UpdateHealth_Implementation(int NewHealth)
 void ASclopetiatorCharacter::HealthModified_Implementation(int DMG)
 {
 	HealthModified_Internal(DMG);
+}
+
+int ASclopetiatorCharacter::GetHealth()
+{
+	return this->Health;
+}
+
+float ASclopetiatorCharacter::GetSpeed()
+{
+	return this->Speed;
+}
+
+float ASclopetiatorCharacter::GetLuck()
+{
+	return this->Luck;
+}
+
+bool ASclopetiatorCharacter::GetIsAiming()
+{
+	return this->isAiming;
 }
 
 void ASclopetiatorCharacter::Move(const FInputActionValue& Value)
