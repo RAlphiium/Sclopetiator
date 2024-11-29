@@ -92,9 +92,9 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void UpdateHealth(int NewHealth);
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	void UpdateMovement(float AddedSpeed);
+	void UpdateMovement(float NewSpeed);
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	void UpdateLuck(float AddedLuck);
+	void UpdateLuck(float NewLuck);
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void HealthModified(int DMG);
 
@@ -119,8 +119,8 @@ protected:
 	//Methods
 	virtual void ScorePointsModified_Internal(int IncomingScorePoints);
 	virtual void UpdateHealth_Internal(int NewHealth);
-	virtual void UpdateMovement_Internal(float AddedSpeed);
-	virtual void UpdateLuck_Internal(float AddedLuck);
+	virtual void UpdateMovement_Internal(float NewSpeed);
+	virtual void UpdateLuck_Internal(float NewLuck);
 	virtual void HealthModified_Internal(int DMG);
 
 //public:

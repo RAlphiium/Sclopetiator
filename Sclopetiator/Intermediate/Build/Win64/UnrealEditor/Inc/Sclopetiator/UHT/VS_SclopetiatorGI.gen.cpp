@@ -852,11 +852,11 @@ struct Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshPlayerHealth_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "//Refresh Player Health;\n" },
+		{ "Comment", "//Refresh Player Health\n" },
 #endif
 		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Refresh Player Health;" },
+		{ "ToolTip", "Refresh Player Health" },
 #endif
 	};
 #endif // WITH_METADATA
@@ -880,6 +880,46 @@ DEFINE_FUNCTION(UVS_SclopetiatorGI::execRefreshPlayerHealth)
 	P_NATIVE_END;
 }
 // End Class UVS_SclopetiatorGI Function RefreshPlayerHealth
+
+// Begin Class UVS_SclopetiatorGI Function RefreshStatPoints
+static FName NAME_UVS_SclopetiatorGI_RefreshStatPoints = FName(TEXT("RefreshStatPoints"));
+void UVS_SclopetiatorGI::RefreshStatPoints()
+{
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_RefreshStatPoints),NULL);
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshStatPoints_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Refresh Stat Points\n" },
+#endif
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Refresh Stat Points" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshStatPoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "RefreshStatPoints", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshStatPoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshStatPoints_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshStatPoints()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshStatPoints_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execRefreshStatPoints)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->RefreshStatPoints_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function RefreshStatPoints
 
 // Begin Class UVS_SclopetiatorGI Function RewriteStats
 static FName NAME_UVS_SclopetiatorGI_RewriteStats = FName(TEXT("RewriteStats"));
@@ -1020,6 +1060,7 @@ void UVS_SclopetiatorGI::StaticRegisterNativesUVS_SclopetiatorGI()
 		{ "IsHealthValid", &UVS_SclopetiatorGI::execIsHealthValid },
 		{ "IsStatPointsValid", &UVS_SclopetiatorGI::execIsStatPointsValid },
 		{ "RefreshPlayerHealth", &UVS_SclopetiatorGI::execRefreshPlayerHealth },
+		{ "RefreshStatPoints", &UVS_SclopetiatorGI::execRefreshStatPoints },
 		{ "RewriteStats", &UVS_SclopetiatorGI::execRewriteStats },
 		{ "UpdatePlayer", &UVS_SclopetiatorGI::execUpdatePlayer },
 		{ "UpdateVariables", &UVS_SclopetiatorGI::execUpdateVariables },
@@ -1167,7 +1208,8 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncrementStatPoints, "IncrementStatPoints" }, // 478417504
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid, "IsHealthValid" }, // 2452959550
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid, "IsStatPointsValid" }, // 563155562
-		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshPlayerHealth, "RefreshPlayerHealth" }, // 3001482739
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshPlayerHealth, "RefreshPlayerHealth" }, // 1250163704
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshStatPoints, "RefreshStatPoints" }, // 1635326865
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_RewriteStats, "RewriteStats" }, // 3172200059
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_UpdatePlayer, "UpdatePlayer" }, // 1989418654
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_UpdateVariables, "UpdateVariables" }, // 4255997404
@@ -1251,10 +1293,10 @@ struct Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetia
 		{ FFirearmStats::StaticStruct, Z_Construct_UScriptStruct_FFirearmStats_Statics::NewStructOps, TEXT("FirearmStats"), &Z_Registration_Info_UScriptStruct_FirearmStats, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FFirearmStats), 1704484502U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UVS_SclopetiatorGI, UVS_SclopetiatorGI::StaticClass, TEXT("UVS_SclopetiatorGI"), &Z_Registration_Info_UClass_UVS_SclopetiatorGI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVS_SclopetiatorGI), 753854779U) },
+		{ Z_Construct_UClass_UVS_SclopetiatorGI, UVS_SclopetiatorGI::StaticClass, TEXT("UVS_SclopetiatorGI"), &Z_Registration_Info_UClass_UVS_SclopetiatorGI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVS_SclopetiatorGI), 2238712808U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_1868300795(TEXT("/Script/Sclopetiator"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_1053856928(TEXT("/Script/Sclopetiator"),
 	Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ScriptStructInfo),
 	nullptr, 0);

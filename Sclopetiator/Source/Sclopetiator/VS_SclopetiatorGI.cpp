@@ -58,6 +58,11 @@ void UVS_SclopetiatorGI::RefreshPlayerHealth_Implementation()
 	RefreshPlayerHealth_Internal();
 }
 
+void UVS_SclopetiatorGI::RefreshStatPoints_Implementation()
+{
+	RefreshStatPoints_Internal();
+}
+
 void UVS_SclopetiatorGI::IncrementStatPoints_Implementation()
 {
 	IncrementStatPoints_Internal();
@@ -152,6 +157,11 @@ void UVS_SclopetiatorGI::RefreshPlayerHealth_Internal()
 	ASclopetiatorCharacter* Player = Cast<ASclopetiatorCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 	PlayerStats.Health = Player->GetHealth();
 	MODPlayerStats.Health = PlayerStats.Health;
+}
+
+void UVS_SclopetiatorGI::RefreshStatPoints_Internal()
+{
+	this->StatPoints = this->MODStatPoints;
 }
 
 void UVS_SclopetiatorGI::IncrementStatPoints_Internal()

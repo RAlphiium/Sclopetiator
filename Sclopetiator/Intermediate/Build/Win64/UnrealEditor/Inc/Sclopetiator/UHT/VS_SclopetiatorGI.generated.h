@@ -46,6 +46,7 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	virtual void IncrementPlayerHealth_Implementation(); \
 	virtual void DecrementStatPoints_Implementation(); \
 	virtual void IncrementStatPoints_Implementation(); \
+	virtual void RefreshStatPoints_Implementation(); \
 	virtual void RefreshPlayerHealth_Implementation(); \
 	virtual void UpdatePlayer_Implementation(); \
 	virtual void UpdateVariables_Implementation(); \
@@ -63,6 +64,7 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	DECLARE_FUNCTION(execIncrementPlayerHealth); \
 	DECLARE_FUNCTION(execDecrementStatPoints); \
 	DECLARE_FUNCTION(execIncrementStatPoints); \
+	DECLARE_FUNCTION(execRefreshStatPoints); \
 	DECLARE_FUNCTION(execRefreshPlayerHealth); \
 	DECLARE_FUNCTION(execUpdatePlayer); \
 	DECLARE_FUNCTION(execUpdateVariables); \

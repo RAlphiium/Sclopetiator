@@ -78,14 +78,14 @@ void ASclopetiatorCharacter::ScorePointsModified_Internal(int IncomingScorePoint
 	GI->OnScorePointsModified.Broadcast(this->ScorePoints);
 }
 
-void ASclopetiatorCharacter::UpdateLuck_Internal(float AddedLuck)
+void ASclopetiatorCharacter::UpdateLuck_Internal(float NewLuck)
 {
-	this->Luck = this->Luck + AddedLuck;
+	this->Luck = NewLuck;
 }
 
-void ASclopetiatorCharacter::UpdateMovement_Internal(float AddedSpeed)
+void ASclopetiatorCharacter::UpdateMovement_Internal(float NewSpeed)
 {
-	this->Speed = this->Speed + AddedSpeed;
+	this->Speed = NewSpeed;
 	if (UCharacterMovementComponent* Movement = this->FindComponentByClass<UCharacterMovementComponent>()) {
 		Movement->MaxWalkSpeed = this->Speed;
 	}
@@ -111,14 +111,14 @@ void ASclopetiatorCharacter::ScorePointsModified_Implementation(int IncomingScor
 	ScorePointsModified_Internal(IncomingScorePoints);
 }
 
-void ASclopetiatorCharacter::UpdateLuck_Implementation(float AddedLuck)
+void ASclopetiatorCharacter::UpdateLuck_Implementation(float NewLuck)
 {
-	UpdateLuck_Internal(AddedLuck);
+	UpdateLuck_Internal(NewLuck);
 }
 
-void ASclopetiatorCharacter::UpdateMovement_Implementation(float AddedSpeed)
+void ASclopetiatorCharacter::UpdateMovement_Implementation(float NewSpeed)
 {
-	UpdateMovement_Internal(AddedSpeed);
+	UpdateMovement_Internal(NewSpeed);
 }
 
 void ASclopetiatorCharacter::UpdateHealth_Implementation(int NewHealth)

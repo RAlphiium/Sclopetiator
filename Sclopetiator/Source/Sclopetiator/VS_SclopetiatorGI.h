@@ -58,9 +58,13 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void UpdatePlayer();
 
-	//Refresh Player Health;
+	//Refresh Player Health
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void RefreshPlayerHealth();
+
+	//Refresh Stat Points
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void RefreshStatPoints();
 
 	//StatPoints Functions
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -153,6 +157,9 @@ protected:
 	
 	//Refresh Player Health
 	virtual void RefreshPlayerHealth_Internal();
+
+	//Refresh Stat Points
+	virtual void RefreshStatPoints_Internal();
 
 	//StatPoints Functions
 	virtual void IncrementStatPoints_Internal();

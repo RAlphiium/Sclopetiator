@@ -20,8 +20,8 @@ SCLOPETIATOR_API void FOnHealthUpdatedSignature_DelegateWrapper(const FMulticast
 
 #define FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_SclopetiatorCharacter_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual void HealthModified_Implementation(int32 DMG); \
-	virtual void UpdateLuck_Implementation(float AddedLuck); \
-	virtual void UpdateMovement_Implementation(float AddedSpeed); \
+	virtual void UpdateLuck_Implementation(float NewLuck); \
+	virtual void UpdateMovement_Implementation(float NewSpeed); \
 	virtual void UpdateHealth_Implementation(int32 NewHealth); \
 	virtual void ScorePointsModified_Implementation(int32 IncomingScorePoints); \
 	DECLARE_FUNCTION(execHealthModified); \
