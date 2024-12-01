@@ -25,13 +25,13 @@ void EmptyLinkFunctionForGeneratedCodeSclopetiator_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x6A35F2F1,
-				0x8B48EA2E,
+				0x5E2CE5E7,
+				0x54B23B92,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_Sclopetiator.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_Sclopetiator.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Sclopetiator(Z_Construct_UPackage__Script_Sclopetiator, TEXT("/Script/Sclopetiator"), Z_Registration_Info_UPackage__Script_Sclopetiator, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x6A35F2F1, 0x8B48EA2E));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Sclopetiator(Z_Construct_UPackage__Script_Sclopetiator, TEXT("/Script/Sclopetiator"), Z_Registration_Info_UPackage__Script_Sclopetiator, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x5E2CE5E7, 0x54B23B92));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

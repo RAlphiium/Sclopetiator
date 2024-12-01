@@ -84,6 +84,12 @@
     <ClInclude Include="..\..\Source\Sclopetiator\VS_BaseItem.h">
       <Filter>Source\Sclopetiator</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\Sclopetiator\VS_RandomItemDrop.cpp">
+      <Filter>Source\Sclopetiator</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Sclopetiator\VS_RandomItemDrop.h">
+      <Filter>Source\Sclopetiator</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Sclopetiator\VS_SclopetiatorGI.cpp">
       <Filter>Source\Sclopetiator</Filter>
     </ClCompile>
