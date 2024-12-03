@@ -6,14 +6,16 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/StarterContent/Architecture/Floor_400x400.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_RandomItemDrop.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_StatPoint.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Base_Actors/BP_BaseEnemy.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/7/BC/VLT6I6240L89HKIDM9DD38.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Stats.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/6/00/VMU6ACNOQ48Q47VTI68G3Z.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/E/3N/6IZQX0ZRTJFWPLLSRBTEV8.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/0/V4/RKS39WTK4NFRZ88SFUOWWF.uasset"
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Base_Actors/BP_BaseGun.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Pistol.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Shotgun.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/ForLoopWithDelayAndBreak.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_EnemySpawner.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_WaveChecker.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Main.uasset"
 			]
 		}
 	]
