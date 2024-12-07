@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SclopetiatorModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c016a23d95def2d4e09602db818b423ec43d6f1c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b67b280f337e71e5a52076670b852b97af014665")]
 [assembly: System.Reflection.AssemblyProductAttribute("SclopetiatorModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SclopetiatorModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
