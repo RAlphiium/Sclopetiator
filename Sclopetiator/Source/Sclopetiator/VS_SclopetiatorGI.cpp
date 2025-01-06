@@ -103,6 +103,17 @@ void UVS_SclopetiatorGI::DecreasePlayerLuck_Implementation()
 	DecreasePlayerLuck_Internal();
 }
 
+void UVS_SclopetiatorGI::IncreasePistolDMG_Implementation()
+{
+	IncreasePistolDMG_Internal();
+}
+
+void UVS_SclopetiatorGI::DecreasePistolDMG_Implementation()
+{
+	DecreasePistolDMG_Internal();
+}
+
+
 bool UVS_SclopetiatorGI::CheckStatPoints_Implementation()
 {
 	return CheckStatPoints_Internal();
@@ -202,6 +213,16 @@ void UVS_SclopetiatorGI::IncreasePlayerLuck_Internal()
 void UVS_SclopetiatorGI::DecreasePlayerLuck_Internal()
 {
 	this->MODPlayerStats.Luck = this->MODPlayerStats.Luck - 5.f;
+}
+
+void UVS_SclopetiatorGI::IncreasePistolDMG_Internal()
+{
+	this->MODPistolStats.DMG = this->MODPistolStats.DMG + 1;
+}
+
+void UVS_SclopetiatorGI::DecreasePistolDMG_Internal()
+{
+	this->MODPistolStats.DMG = this->MODPistolStats.DMG - 1;
 }
 
 bool UVS_SclopetiatorGI::CheckStatPoints_Internal()

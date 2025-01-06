@@ -38,6 +38,8 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	virtual bool IsStatPointsValid_Implementation(); \
 	virtual bool IsHealthValid_Implementation(); \
 	virtual bool CheckStatPoints_Implementation(); \
+	virtual void DecreasePistolDMG_Implementation(); \
+	virtual void IncreasePistolDMG_Implementation(); \
 	virtual void DecreasePlayerLuck_Implementation(); \
 	virtual void IncreasePlayerLuck_Implementation(); \
 	virtual void DecreasePlayerMovement_Implementation(); \
@@ -56,6 +58,8 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	DECLARE_FUNCTION(execIsStatPointsValid); \
 	DECLARE_FUNCTION(execIsHealthValid); \
 	DECLARE_FUNCTION(execCheckStatPoints); \
+	DECLARE_FUNCTION(execDecreasePistolDMG); \
+	DECLARE_FUNCTION(execIncreasePistolDMG); \
 	DECLARE_FUNCTION(execDecreasePlayerLuck); \
 	DECLARE_FUNCTION(execIncreasePlayerLuck); \
 	DECLARE_FUNCTION(execDecreasePlayerMovement); \

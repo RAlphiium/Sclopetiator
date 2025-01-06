@@ -90,6 +90,12 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void DecreasePlayerLuck();
 
+	//PistolDMG Functions
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void IncreasePistolDMG();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void DecreasePistolDMG();
+
 	//Functions:
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -176,6 +182,10 @@ protected:
 	//PlayerLuck Functions
 	virtual void IncreasePlayerLuck_Internal();
 	virtual void DecreasePlayerLuck_Internal();
+
+	//PistolDMG Functions
+	virtual void IncreasePistolDMG_Internal();
+	virtual void DecreasePistolDMG_Internal();
 
 	//Functions:
 	virtual bool CheckStatPoints_Internal();
