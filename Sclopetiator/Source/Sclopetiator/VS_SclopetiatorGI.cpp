@@ -143,6 +143,26 @@ void UVS_SclopetiatorGI::DecreaseShotgunReloadSpeed_Implementation()
 	DecreaseShotgunReloadSpeed_Internal();
 }
 
+void UVS_SclopetiatorGI::IncreaseRifleDMG_Implementation()
+{
+	IncreaseRifleDMG_Internal();
+}
+
+void UVS_SclopetiatorGI::DecreaseRifleDMG_Implementation()
+{
+	DecreaseRifleDMG_Internal();
+}
+
+void UVS_SclopetiatorGI::IncreaseRifleReloadSpeed_Implementation()
+{
+	IncreaseRifleReloadSpeed_Internal();
+}
+
+void UVS_SclopetiatorGI::DecreaseRifleReloadSpeed_Implementation()
+{
+	DecreaseRifleReloadSpeed_Internal();
+}
+
 
 bool UVS_SclopetiatorGI::CheckStatPoints_Implementation()
 {
@@ -285,6 +305,26 @@ void UVS_SclopetiatorGI::DecreaseShotgunReloadSpeed_Internal()
 	this->MODShotgunStats.ReloadSpeed = this->MODShotgunStats.ReloadSpeed + 0.1;
 }
 
+void UVS_SclopetiatorGI::IncreaseRifleDMG_Internal()
+{
+	this->MODRifleStats.DMG = this->MODRifleStats.DMG + 1;
+}
+
+void UVS_SclopetiatorGI::DecreaseRifleDMG_Internal()
+{
+	this->MODRifleStats.DMG = this->MODRifleStats.DMG - 1;
+}
+
+void UVS_SclopetiatorGI::IncreaseRifleReloadSpeed_Internal()
+{
+	this->MODRifleStats.ReloadSpeed = this->MODRifleStats.ReloadSpeed - 0.1;
+}
+
+void UVS_SclopetiatorGI::DecreaseRifleReloadSpeed_Internal()
+{
+	this->MODRifleStats.ReloadSpeed = this->MODRifleStats.ReloadSpeed + 0.1;
+}
+
 bool UVS_SclopetiatorGI::CheckStatPoints_Internal()
 {
 	if (this->MODStatPoints > 0) {
@@ -335,4 +375,3 @@ bool UVS_SclopetiatorGI::AnyFloatChanges_Internal(float param1, float param2)
 		return false;
 	}
 }
-

@@ -38,6 +38,10 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	virtual bool IsStatPointsValid_Implementation(); \
 	virtual bool IsHealthValid_Implementation(); \
 	virtual bool CheckStatPoints_Implementation(); \
+	virtual void DecreaseRifleReloadSpeed_Implementation(); \
+	virtual void IncreaseRifleReloadSpeed_Implementation(); \
+	virtual void DecreaseRifleDMG_Implementation(); \
+	virtual void IncreaseRifleDMG_Implementation(); \
 	virtual void DecreaseShotgunReloadSpeed_Implementation(); \
 	virtual void IncreaseShotgunReloadSpeed_Implementation(); \
 	virtual void DecreaseShotgunDMG_Implementation(); \
@@ -64,6 +68,10 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	DECLARE_FUNCTION(execIsStatPointsValid); \
 	DECLARE_FUNCTION(execIsHealthValid); \
 	DECLARE_FUNCTION(execCheckStatPoints); \
+	DECLARE_FUNCTION(execDecreaseRifleReloadSpeed); \
+	DECLARE_FUNCTION(execIncreaseRifleReloadSpeed); \
+	DECLARE_FUNCTION(execDecreaseRifleDMG); \
+	DECLARE_FUNCTION(execIncreaseRifleDMG); \
 	DECLARE_FUNCTION(execDecreaseShotgunReloadSpeed); \
 	DECLARE_FUNCTION(execIncreaseShotgunReloadSpeed); \
 	DECLARE_FUNCTION(execDecreaseShotgunDMG); \

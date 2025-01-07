@@ -1,1 +1,0 @@
-#include "C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Source/Sclopetiator/VS_StatPoint.h"

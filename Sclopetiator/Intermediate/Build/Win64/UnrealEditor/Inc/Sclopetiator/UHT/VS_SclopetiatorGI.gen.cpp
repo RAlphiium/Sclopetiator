@@ -563,6 +563,74 @@ DEFINE_FUNCTION(UVS_SclopetiatorGI::execDecreasePlayerMovement)
 }
 // End Class UVS_SclopetiatorGI Function DecreasePlayerMovement
 
+// Begin Class UVS_SclopetiatorGI Function DecreaseRifleDMG
+static FName NAME_UVS_SclopetiatorGI_DecreaseRifleDMG = FName(TEXT("DecreaseRifleDMG"));
+void UVS_SclopetiatorGI::DecreaseRifleDMG()
+{
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_DecreaseRifleDMG),NULL);
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleDMG_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleDMG_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "DecreaseRifleDMG", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleDMG_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleDMG_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleDMG()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleDMG_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execDecreaseRifleDMG)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->DecreaseRifleDMG_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function DecreaseRifleDMG
+
+// Begin Class UVS_SclopetiatorGI Function DecreaseRifleReloadSpeed
+static FName NAME_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed = FName(TEXT("DecreaseRifleReloadSpeed"));
+void UVS_SclopetiatorGI::DecreaseRifleReloadSpeed()
+{
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed),NULL);
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "DecreaseRifleReloadSpeed", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execDecreaseRifleReloadSpeed)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->DecreaseRifleReloadSpeed_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function DecreaseRifleReloadSpeed
+
 // Begin Class UVS_SclopetiatorGI Function DecreaseShotgunDMG
 static FName NAME_UVS_SclopetiatorGI_DecreaseShotgunDMG = FName(TEXT("DecreaseShotgunDMG"));
 void UVS_SclopetiatorGI::DecreaseShotgunDMG()
@@ -858,6 +926,86 @@ DEFINE_FUNCTION(UVS_SclopetiatorGI::execIncreasePlayerMovement)
 	P_NATIVE_END;
 }
 // End Class UVS_SclopetiatorGI Function IncreasePlayerMovement
+
+// Begin Class UVS_SclopetiatorGI Function IncreaseRifleDMG
+static FName NAME_UVS_SclopetiatorGI_IncreaseRifleDMG = FName(TEXT("IncreaseRifleDMG"));
+void UVS_SclopetiatorGI::IncreaseRifleDMG()
+{
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_IncreaseRifleDMG),NULL);
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleDMG_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//RifleDMG Functions\n" },
+#endif
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "RifleDMG Functions" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleDMG_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "IncreaseRifleDMG", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleDMG_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleDMG_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleDMG()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleDMG_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execIncreaseRifleDMG)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncreaseRifleDMG_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function IncreaseRifleDMG
+
+// Begin Class UVS_SclopetiatorGI Function IncreaseRifleReloadSpeed
+static FName NAME_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed = FName(TEXT("IncreaseRifleReloadSpeed"));
+void UVS_SclopetiatorGI::IncreaseRifleReloadSpeed()
+{
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed),NULL);
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//RifleReloadSpeed Functions\n" },
+#endif
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "RifleReloadSpeed Functions" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "IncreaseRifleReloadSpeed", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execIncreaseRifleReloadSpeed)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncreaseRifleReloadSpeed_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function IncreaseRifleReloadSpeed
 
 // Begin Class UVS_SclopetiatorGI Function IncreaseShotgunDMG
 static FName NAME_UVS_SclopetiatorGI_IncreaseShotgunDMG = FName(TEXT("IncreaseShotgunDMG"));
@@ -1349,6 +1497,8 @@ void UVS_SclopetiatorGI::StaticRegisterNativesUVS_SclopetiatorGI()
 		{ "DecreasePistolReloadSpeed", &UVS_SclopetiatorGI::execDecreasePistolReloadSpeed },
 		{ "DecreasePlayerLuck", &UVS_SclopetiatorGI::execDecreasePlayerLuck },
 		{ "DecreasePlayerMovement", &UVS_SclopetiatorGI::execDecreasePlayerMovement },
+		{ "DecreaseRifleDMG", &UVS_SclopetiatorGI::execDecreaseRifleDMG },
+		{ "DecreaseRifleReloadSpeed", &UVS_SclopetiatorGI::execDecreaseRifleReloadSpeed },
 		{ "DecreaseShotgunDMG", &UVS_SclopetiatorGI::execDecreaseShotgunDMG },
 		{ "DecreaseShotgunReloadSpeed", &UVS_SclopetiatorGI::execDecreaseShotgunReloadSpeed },
 		{ "DecrementPlayerHealth", &UVS_SclopetiatorGI::execDecrementPlayerHealth },
@@ -1357,6 +1507,8 @@ void UVS_SclopetiatorGI::StaticRegisterNativesUVS_SclopetiatorGI()
 		{ "IncreasePistolReloadSpeed", &UVS_SclopetiatorGI::execIncreasePistolReloadSpeed },
 		{ "IncreasePlayerLuck", &UVS_SclopetiatorGI::execIncreasePlayerLuck },
 		{ "IncreasePlayerMovement", &UVS_SclopetiatorGI::execIncreasePlayerMovement },
+		{ "IncreaseRifleDMG", &UVS_SclopetiatorGI::execIncreaseRifleDMG },
+		{ "IncreaseRifleReloadSpeed", &UVS_SclopetiatorGI::execIncreaseRifleReloadSpeed },
 		{ "IncreaseShotgunDMG", &UVS_SclopetiatorGI::execIncreaseShotgunDMG },
 		{ "IncreaseShotgunReloadSpeed", &UVS_SclopetiatorGI::execIncreaseShotgunReloadSpeed },
 		{ "IncrementPlayerHealth", &UVS_SclopetiatorGI::execIncrementPlayerHealth },
@@ -1506,6 +1658,8 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreasePistolReloadSpeed, "DecreasePistolReloadSpeed" }, // 1808064985
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreasePlayerLuck, "DecreasePlayerLuck" }, // 2683311545
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreasePlayerMovement, "DecreasePlayerMovement" }, // 1174659643
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleDMG, "DecreaseRifleDMG" }, // 3919403750
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed, "DecreaseRifleReloadSpeed" }, // 691759416
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseShotgunDMG, "DecreaseShotgunDMG" }, // 479468544
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseShotgunReloadSpeed, "DecreaseShotgunReloadSpeed" }, // 3708943530
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecrementPlayerHealth, "DecrementPlayerHealth" }, // 1243008120
@@ -1514,6 +1668,8 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreasePistolReloadSpeed, "IncreasePistolReloadSpeed" }, // 2266631771
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreasePlayerLuck, "IncreasePlayerLuck" }, // 3927393832
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreasePlayerMovement, "IncreasePlayerMovement" }, // 644459040
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleDMG, "IncreaseRifleDMG" }, // 1932752731
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed, "IncreaseRifleReloadSpeed" }, // 3891423739
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseShotgunDMG, "IncreaseShotgunDMG" }, // 2361923124
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseShotgunReloadSpeed, "IncreaseShotgunReloadSpeed" }, // 3432445802
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncrementPlayerHealth, "IncrementPlayerHealth" }, // 128978268
@@ -1605,10 +1761,10 @@ struct Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetia
 		{ FFirearmStats::StaticStruct, Z_Construct_UScriptStruct_FFirearmStats_Statics::NewStructOps, TEXT("FirearmStats"), &Z_Registration_Info_UScriptStruct_FirearmStats, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FFirearmStats), 1704484502U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UVS_SclopetiatorGI, UVS_SclopetiatorGI::StaticClass, TEXT("UVS_SclopetiatorGI"), &Z_Registration_Info_UClass_UVS_SclopetiatorGI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVS_SclopetiatorGI), 372409236U) },
+		{ Z_Construct_UClass_UVS_SclopetiatorGI, UVS_SclopetiatorGI::StaticClass, TEXT("UVS_SclopetiatorGI"), &Z_Registration_Info_UClass_UVS_SclopetiatorGI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVS_SclopetiatorGI), 33131192U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_649091761(TEXT("/Script/Sclopetiator"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_2345294929(TEXT("/Script/Sclopetiator"),
 	Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ScriptStructInfo),
 	nullptr, 0);
