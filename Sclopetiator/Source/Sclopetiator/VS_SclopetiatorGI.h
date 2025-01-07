@@ -96,6 +96,24 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void DecreasePistolDMG();
 
+	//PistolReloadSpeed Functions
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void IncreasePistolReloadSpeed();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void DecreasePistolReloadSpeed();
+
+	//ShotgunDMG Functions
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void IncreaseShotgunDMG();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void DecreaseShotgunDMG();
+
+	//ShotgunReloadSpeed Functions
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void IncreaseShotgunReloadSpeed();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void DecreaseShotgunReloadSpeed();
+
 	//Functions:
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -186,6 +204,18 @@ protected:
 	//PistolDMG Functions
 	virtual void IncreasePistolDMG_Internal();
 	virtual void DecreasePistolDMG_Internal();
+
+	//PistolReloadSpeed Functions
+	virtual void IncreasePistolReloadSpeed_Internal();
+	virtual void DecreasePistolReloadSpeed_Internal();
+
+	//ShotgunDMG Functions
+	virtual void IncreaseShotgunDMG_Internal();
+	virtual void DecreaseShotgunDMG_Internal();
+
+	//ShotgunDMG Functions
+	virtual void IncreaseShotgunReloadSpeed_Internal();
+	virtual void DecreaseShotgunReloadSpeed_Internal();
 
 	//Functions:
 	virtual bool CheckStatPoints_Internal();

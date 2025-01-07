@@ -38,6 +38,12 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	virtual bool IsStatPointsValid_Implementation(); \
 	virtual bool IsHealthValid_Implementation(); \
 	virtual bool CheckStatPoints_Implementation(); \
+	virtual void DecreaseShotgunReloadSpeed_Implementation(); \
+	virtual void IncreaseShotgunReloadSpeed_Implementation(); \
+	virtual void DecreaseShotgunDMG_Implementation(); \
+	virtual void IncreaseShotgunDMG_Implementation(); \
+	virtual void DecreasePistolReloadSpeed_Implementation(); \
+	virtual void IncreasePistolReloadSpeed_Implementation(); \
 	virtual void DecreasePistolDMG_Implementation(); \
 	virtual void IncreasePistolDMG_Implementation(); \
 	virtual void DecreasePlayerLuck_Implementation(); \
@@ -58,6 +64,12 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	DECLARE_FUNCTION(execIsStatPointsValid); \
 	DECLARE_FUNCTION(execIsHealthValid); \
 	DECLARE_FUNCTION(execCheckStatPoints); \
+	DECLARE_FUNCTION(execDecreaseShotgunReloadSpeed); \
+	DECLARE_FUNCTION(execIncreaseShotgunReloadSpeed); \
+	DECLARE_FUNCTION(execDecreaseShotgunDMG); \
+	DECLARE_FUNCTION(execIncreaseShotgunDMG); \
+	DECLARE_FUNCTION(execDecreasePistolReloadSpeed); \
+	DECLARE_FUNCTION(execIncreasePistolReloadSpeed); \
 	DECLARE_FUNCTION(execDecreasePistolDMG); \
 	DECLARE_FUNCTION(execIncreasePistolDMG); \
 	DECLARE_FUNCTION(execDecreasePlayerLuck); \

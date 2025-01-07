@@ -20,19 +20,19 @@ UVS_SclopetiatorGI::UVS_SclopetiatorGI()
 
 	//PistolStats
 	this->PistolStats.DMG = 1;
-	this->PistolStats.ReloadSpeed = 0.0;
+	this->PistolStats.ReloadSpeed = 1.75;
 	this->MODPistolStats.DMG = this->PistolStats.DMG;
 	this->MODPistolStats.ReloadSpeed = this->PistolStats.ReloadSpeed;
 
 	//ShotgunStats
 	this->ShotgunStats.DMG = 1;
-	this->ShotgunStats.ReloadSpeed = 0.0;
+	this->ShotgunStats.ReloadSpeed = 0.75;
 	this->MODShotgunStats.DMG = this->ShotgunStats.DMG;
 	this->MODShotgunStats.ReloadSpeed = this->ShotgunStats.ReloadSpeed;
 
 	//RifleStats
 	this->RifleStats.DMG = 1;
-	this->RifleStats.ReloadSpeed = 0.0;
+	this->RifleStats.ReloadSpeed = 2.5;
 	this->MODRifleStats.DMG = this->RifleStats.DMG;
 	this->MODRifleStats.ReloadSpeed = this->RifleStats.ReloadSpeed;
 }
@@ -111,6 +111,36 @@ void UVS_SclopetiatorGI::IncreasePistolDMG_Implementation()
 void UVS_SclopetiatorGI::DecreasePistolDMG_Implementation()
 {
 	DecreasePistolDMG_Internal();
+}
+
+void UVS_SclopetiatorGI::IncreasePistolReloadSpeed_Implementation()
+{
+	IncreasePistolReloadSpeed_Internal();
+}
+
+void UVS_SclopetiatorGI::DecreasePistolReloadSpeed_Implementation()
+{
+	DecreasePistolReloadSpeed_Internal();
+}
+
+void UVS_SclopetiatorGI::IncreaseShotgunDMG_Implementation()
+{
+	IncreaseShotgunDMG_Internal();
+}
+
+void UVS_SclopetiatorGI::DecreaseShotgunDMG_Implementation()
+{
+	DecreaseShotgunDMG_Internal();
+}
+
+void UVS_SclopetiatorGI::IncreaseShotgunReloadSpeed_Implementation()
+{
+	IncreaseShotgunReloadSpeed_Internal();
+}
+
+void UVS_SclopetiatorGI::DecreaseShotgunReloadSpeed_Implementation()
+{
+	DecreaseShotgunReloadSpeed_Internal();
 }
 
 
@@ -225,6 +255,36 @@ void UVS_SclopetiatorGI::DecreasePistolDMG_Internal()
 	this->MODPistolStats.DMG = this->MODPistolStats.DMG - 1;
 }
 
+void UVS_SclopetiatorGI::IncreasePistolReloadSpeed_Internal()
+{
+	this->MODPistolStats.ReloadSpeed = this->MODPistolStats.ReloadSpeed - 0.1;
+}
+
+void UVS_SclopetiatorGI::DecreasePistolReloadSpeed_Internal()
+{
+	this->MODPistolStats.ReloadSpeed = this->MODPistolStats.ReloadSpeed + 0.1;
+}
+
+void UVS_SclopetiatorGI::IncreaseShotgunDMG_Internal()
+{
+	this->MODShotgunStats.DMG = this->MODShotgunStats.DMG + 1;
+}
+
+void UVS_SclopetiatorGI::DecreaseShotgunDMG_Internal()
+{
+	this->MODShotgunStats.DMG = this->MODShotgunStats.DMG - 1;
+}
+
+void UVS_SclopetiatorGI::IncreaseShotgunReloadSpeed_Internal()
+{
+	this->MODShotgunStats.ReloadSpeed = this->MODShotgunStats.ReloadSpeed - 0.1;
+}
+
+void UVS_SclopetiatorGI::DecreaseShotgunReloadSpeed_Internal()
+{
+	this->MODShotgunStats.ReloadSpeed = this->MODShotgunStats.ReloadSpeed + 0.1;
+}
+
 bool UVS_SclopetiatorGI::CheckStatPoints_Internal()
 {
 	if (this->MODStatPoints > 0) {
@@ -275,3 +335,4 @@ bool UVS_SclopetiatorGI::AnyFloatChanges_Internal(float param1, float param2)
 		return false;
 	}
 }
+
