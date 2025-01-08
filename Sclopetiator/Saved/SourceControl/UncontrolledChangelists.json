@@ -5,12 +5,11 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/StarterContent/Architecture/Floor_400x400.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Assets/Images/Rifle.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Stats.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/GI_Sclopetiator.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Shotgun.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Rifle.uasset"
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Rifle.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Rifle.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Shotgun.uasset"
 			]
 		}
 	]
