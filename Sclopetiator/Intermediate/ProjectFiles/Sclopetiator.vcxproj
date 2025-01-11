@@ -67,7 +67,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{87E06899-1FB7-30E2-BE8F-1D0C5587FFBE}</ProjectGuid>
+    <ProjectGuid>{38360B51-BCD6-3FBA-8908-9749252A85F5}</ProjectGuid>
     <RootNamespace>Sclopetiator</RootNamespace>
   </PropertyGroup>
   <Import Project="UECommon.props" />

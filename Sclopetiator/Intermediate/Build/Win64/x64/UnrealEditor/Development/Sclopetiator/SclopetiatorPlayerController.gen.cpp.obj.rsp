@@ -1,11 +1,11 @@
-"C:\Users\itsno\source\repos\Sclopetiator\Sclopetiator\Intermediate\Build\Win64\UnrealEditor\Inc\Sclopetiator\UHT\SclopetiatorPlayerController.gen.cpp"
-/FI"C:\Users\itsno\source\repos\Sclopetiator\Sclopetiator\Intermediate\Build\Win64\x64\SclopetiatorEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/FI"C:\Users\itsno\source\repos\Sclopetiator\Sclopetiator\Intermediate\Build\Win64\x64\UnrealEditor\Development\Sclopetiator\Definitions.Sclopetiator.h"
-/Yu"C:\Users\itsno\source\repos\Sclopetiator\Sclopetiator\Intermediate\Build\Win64\x64\SclopetiatorEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
-/Fp"C:\Users\itsno\source\repos\Sclopetiator\Sclopetiator\Intermediate\Build\Win64\x64\SclopetiatorEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
-/Fo"C:\Users\itsno\source\repos\Sclopetiator\Sclopetiator\Intermediate\Build\Win64\x64\UnrealEditor\Development\Sclopetiator\SclopetiatorPlayerController.gen.cpp.obj"
-/sourceDependencies "C:\Users\itsno\source\repos\Sclopetiator\Sclopetiator\Intermediate\Build\Win64\x64\UnrealEditor\Development\Sclopetiator\SclopetiatorPlayerController.gen.cpp.dep.json"
-@"C:\Users\itsno\source\repos\Sclopetiator\Sclopetiator\Intermediate\Build\Win64\x64\UnrealEditor\Development\Sclopetiator\Sclopetiator.Shared.rsp"
+"C:\Users\itsno\Downloads\Sclopetiator-main\Sclopetiator-main\Sclopetiator\Intermediate\Build\Win64\UnrealEditor\Inc\Sclopetiator\UHT\SclopetiatorPlayerController.gen.cpp"
+/FI"C:\Users\itsno\Downloads\Sclopetiator-main\Sclopetiator-main\Sclopetiator\Intermediate\Build\Win64\x64\SclopetiatorEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/FI"C:\Users\itsno\Downloads\Sclopetiator-main\Sclopetiator-main\Sclopetiator\Intermediate\Build\Win64\x64\UnrealEditor\Development\Sclopetiator\Definitions.Sclopetiator.h"
+/Yu"C:\Users\itsno\Downloads\Sclopetiator-main\Sclopetiator-main\Sclopetiator\Intermediate\Build\Win64\x64\SclopetiatorEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h"
+/Fp"C:\Users\itsno\Downloads\Sclopetiator-main\Sclopetiator-main\Sclopetiator\Intermediate\Build\Win64\x64\SclopetiatorEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.pch"
+/Fo"C:\Users\itsno\Downloads\Sclopetiator-main\Sclopetiator-main\Sclopetiator\Intermediate\Build\Win64\x64\UnrealEditor\Development\Sclopetiator\SclopetiatorPlayerController.gen.cpp.obj"
+/sourceDependencies "C:\Users\itsno\Downloads\Sclopetiator-main\Sclopetiator-main\Sclopetiator\Intermediate\Build\Win64\x64\UnrealEditor\Development\Sclopetiator\SclopetiatorPlayerController.gen.cpp.dep.json"
+@"C:\Users\itsno\Downloads\Sclopetiator-main\Sclopetiator-main\Sclopetiator\Intermediate\Build\Win64\x64\UnrealEditor\Development\Sclopetiator\Sclopetiator.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

@@ -5,19 +5,14 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Shotgun.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Rifle.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Rifle.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Shotgun.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Stats.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/SclopetiatorLevel.umap",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_WaveChecker.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Bullet.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Materials/Actor_Materials/M_BulletColour.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Materials/M_BulletColour.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Materials/Shader_Materials/PPM_OutlineShader.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_MeleeEnemy.uasset"
+				"C:/Users/itsno/Downloads/Sclopetiator-main/Sclopetiator-main/Sclopetiator/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/itsno/Downloads/Sclopetiator-main/Sclopetiator-main/Sclopetiator/Content/Sclopetiator/Blueprints/BP_Bullet.uasset",
+				"C:/Users/itsno/Downloads/Sclopetiator-main/Sclopetiator-main/Sclopetiator/Content/Sclopetiator/Materials/Shader_Materials/PP_OutlineShader.uasset",
+				"C:/Users/itsno/Downloads/Sclopetiator-main/Sclopetiator-main/Sclopetiator/Content/Sclopetiator/Materials/Shader_Materials/PPM_OutlineShader.uasset",
+				"C:/Users/itsno/Downloads/Sclopetiator-main/Sclopetiator-main/Sclopetiator/Content/Sclopetiator/Blueprints/BP_EnemySpawner.uasset",
+				"C:/Users/itsno/Downloads/Sclopetiator-main/Sclopetiator-main/Sclopetiator/Content/Sclopetiator/Blueprints/BP_WaveChecker.uasset",
+				"C:/Users/itsno/Downloads/Sclopetiator-main/Sclopetiator-main/Sclopetiator/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/E/MX/R1GV431P5FDO08OFULRA01.uasset",
+				"C:/Users/itsno/Downloads/Sclopetiator-main/Sclopetiator-main/Sclopetiator/Content/Sclopetiator/SclopetiatorLevel.umap"
 			]
 		}
 	]

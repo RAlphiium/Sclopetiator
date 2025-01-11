@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\source\\sclopetiator\\vs_sclopetiatorgi.cpp",
+        "Source": "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\source\\sclopetiator\\vs_sclopetiatorgi.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\x64\\sclopetiatoreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\intermediate\\build\\win64\\x64\\sclopetiatoreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sclopetiator\\definitions.sclopetiator.h",
-            "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\source\\sclopetiator\\sclopetiatorcharacter.h",
+            "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sclopetiator\\definitions.sclopetiator.h",
+            "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\source\\sclopetiator\\sclopetiatorcharacter.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
@@ -43,9 +43,9 @@
             "c:\\program files\\epic games\\ue_5.4\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
             "c:\\program files\\epic games\\ue_5.4\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h",
-            "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\sclopetiatorcharacter.generated.h",
-            "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\source\\sclopetiator\\vs_sclopetiatorgi.h",
-            "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\vs_sclopetiatorgi.generated.h"
+            "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\sclopetiatorcharacter.generated.h",
+            "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\source\\sclopetiator\\vs_sclopetiatorgi.h",
+            "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\vs_sclopetiatorgi.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

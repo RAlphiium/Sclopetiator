@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\vs_sclopetiatorgi.gen.cpp",
+        "Source": "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\vs_sclopetiatorgi.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\x64\\sclopetiatoreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "PCH": "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\intermediate\\build\\win64\\x64\\sclopetiatoreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
         "Includes": [
-            "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sclopetiator\\definitions.sclopetiator.h",
-            "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\source\\sclopetiator\\vs_sclopetiatorgi.h",
-            "c:\\users\\itsno\\source\\repos\\sclopetiator\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\vs_sclopetiatorgi.generated.h"
+            "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\sclopetiator\\definitions.sclopetiator.h",
+            "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\source\\sclopetiator\\vs_sclopetiatorgi.h",
+            "c:\\users\\itsno\\downloads\\sclopetiator-main\\sclopetiator-main\\sclopetiator\\intermediate\\build\\win64\\unrealeditor\\inc\\sclopetiator\\uht\\vs_sclopetiatorgi.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []
