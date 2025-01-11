@@ -1,8 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "VS_BaseItem.h"
 #include "Kismet/GameplayStatics.h"
 #include "SclopetiatorPlayerController.h"
-#include "VS_BaseItem.h"
+
 
 // Sets default values
 AVS_BaseItem::AVS_BaseItem()

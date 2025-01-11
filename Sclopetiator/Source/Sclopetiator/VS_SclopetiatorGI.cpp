@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "VS_SclopetiatorGI.h"
 #include "SclopetiatorCharacter.h"
 #include "Kismet/GameplayStatics.h"
-#include "VS_SclopetiatorGI.h"
 
 UVS_SclopetiatorGI::UVS_SclopetiatorGI()
 {
@@ -374,4 +374,9 @@ bool UVS_SclopetiatorGI::AnyFloatChanges_Internal(float param1, float param2)
 	else {
 		return false;
 	}
+}
+
+void UVS_SclopetiatorGI::UpdateScorePoints(int newScorePoints)
+{
+	this->ScorePoints = newScorePoints;
 }

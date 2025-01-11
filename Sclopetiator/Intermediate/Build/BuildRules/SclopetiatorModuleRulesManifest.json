@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\itsno\\Downloads\\Sclopetiator-main\\Sclopetiator-main\\Sclopetiator\\Source\\Sclopetiator\\Sclopetiator.Build.cs",
-		"C:\\Users\\itsno\\Downloads\\Sclopetiator-main\\Sclopetiator-main\\Sclopetiator\\Source\\Sclopetiator.Target.cs",
-		"C:\\Users\\itsno\\Downloads\\Sclopetiator-main\\Sclopetiator-main\\Sclopetiator\\Source\\SclopetiatorEditor.Target.cs"
+		"C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Source\\Sclopetiator\\Sclopetiator.Build.cs",
+		"C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Source\\Sclopetiator.Target.cs",
+		"C:\\Users\\itsno\\source\\repos\\Sclopetiator\\Sclopetiator\\Source\\SclopetiatorEditor.Target.cs"
 	],
 	"EngineVersion": "5.4.4"
 }

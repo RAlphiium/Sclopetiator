@@ -140,6 +140,8 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	bool AnyFloatChanges(float param1, float param2);
 
+	void UpdateScorePoints(int newScorePoints);
+
 protected:
 	//Attributes:
 

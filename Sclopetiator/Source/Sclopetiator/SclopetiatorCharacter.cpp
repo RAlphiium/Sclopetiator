@@ -76,6 +76,7 @@ void ASclopetiatorCharacter::ScorePointsModified_Internal(int IncomingScorePoint
 	this->ScorePoints = this->ScorePoints + IncomingScorePoints;
 	UVS_SclopetiatorGI* GI = Cast<UVS_SclopetiatorGI>(UGameplayStatics::GetGameInstance(GetWorld()));
 	GI->OnScorePointsModified.Broadcast(this->ScorePoints);
+	GI->UpdateScorePoints(this->ScorePoints);
 }
 
 void ASclopetiatorCharacter::UpdateLuck_Internal(float NewLuck)

@@ -1,9 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "VS_RandomItemDrop.h"
 #include <cstdlib>
 #include <ctime>
 #include "VS_StatPoint.h"
-#include "VS_RandomItemDrop.h"
 
 void AVS_RandomItemDrop::BeginPlay()
 {
