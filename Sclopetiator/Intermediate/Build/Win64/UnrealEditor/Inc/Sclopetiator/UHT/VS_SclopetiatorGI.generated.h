@@ -35,8 +35,10 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 #define FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
 	virtual bool AnyFloatChanges_Implementation(float param1, float param2); \
 	virtual bool AnyIntegerChanges_Implementation(int32 param1, int32 param2); \
+	virtual bool IsScorePointsValid_Implementation(); \
 	virtual bool IsStatPointsValid_Implementation(); \
 	virtual bool IsHealthValid_Implementation(); \
+	virtual bool CheckScorePoints_Implementation(); \
 	virtual bool CheckStatPoints_Implementation(); \
 	virtual void DecreaseRifleReloadSpeed_Implementation(); \
 	virtual void IncreaseRifleReloadSpeed_Implementation(); \
@@ -58,6 +60,8 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	virtual void IncrementPlayerHealth_Implementation(); \
 	virtual void DecrementStatPoints_Implementation(); \
 	virtual void IncrementStatPoints_Implementation(); \
+	virtual void DecreaseScorePoints_Implementation(); \
+	virtual void IncreaseScorePoints_Implementation(); \
 	virtual void RefreshStatPoints_Implementation(); \
 	virtual void RefreshPlayerHealth_Implementation(); \
 	virtual void UpdatePlayer_Implementation(); \
@@ -65,8 +69,10 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	virtual void RewriteStats_Implementation(); \
 	DECLARE_FUNCTION(execAnyFloatChanges); \
 	DECLARE_FUNCTION(execAnyIntegerChanges); \
+	DECLARE_FUNCTION(execIsScorePointsValid); \
 	DECLARE_FUNCTION(execIsStatPointsValid); \
 	DECLARE_FUNCTION(execIsHealthValid); \
+	DECLARE_FUNCTION(execCheckScorePoints); \
 	DECLARE_FUNCTION(execCheckStatPoints); \
 	DECLARE_FUNCTION(execDecreaseRifleReloadSpeed); \
 	DECLARE_FUNCTION(execIncreaseRifleReloadSpeed); \
@@ -88,6 +94,8 @@ SCLOPETIATOR_API void FOnScorePointsModified_DelegateWrapper(const FMulticastScr
 	DECLARE_FUNCTION(execIncrementPlayerHealth); \
 	DECLARE_FUNCTION(execDecrementStatPoints); \
 	DECLARE_FUNCTION(execIncrementStatPoints); \
+	DECLARE_FUNCTION(execDecreaseScorePoints); \
+	DECLARE_FUNCTION(execIncreaseScorePoints); \
 	DECLARE_FUNCTION(execRefreshStatPoints); \
 	DECLARE_FUNCTION(execRefreshPlayerHealth); \
 	DECLARE_FUNCTION(execUpdatePlayer); \

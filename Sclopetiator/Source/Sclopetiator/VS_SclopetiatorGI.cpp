@@ -63,6 +63,16 @@ void UVS_SclopetiatorGI::RefreshStatPoints_Implementation()
 	RefreshStatPoints_Internal();
 }
 
+void UVS_SclopetiatorGI::IncreaseScorePoints_Implementation()
+{
+	IncreaseScorePoints_Internal();
+}
+
+void UVS_SclopetiatorGI::DecreaseScorePoints_Implementation()
+{
+	DecreaseScorePoints_Internal();
+}
+
 void UVS_SclopetiatorGI::IncrementStatPoints_Implementation()
 {
 	IncrementStatPoints_Internal();
@@ -169,6 +179,16 @@ bool UVS_SclopetiatorGI::CheckStatPoints_Implementation()
 	return CheckStatPoints_Internal();
 }
 
+bool UVS_SclopetiatorGI::CheckScorePoints_Implementation()
+{
+	return CheckScorePoints_Internal();
+}
+
+bool UVS_SclopetiatorGI::IsScorePointsValid_Implementation()
+{
+	return IsScorePointsValid_Internal();
+}
+
 bool UVS_SclopetiatorGI::IsHealthValid_Implementation()
 {
 	return IsHealthValid_Internal();
@@ -198,6 +218,7 @@ void UVS_SclopetiatorGI::RewriteStats_Internal()
 
 void UVS_SclopetiatorGI::UpdateVariables_Internal()
 {
+	this->ScorePoints = this->MODScorePoints;
 	this->StatPoints = this->MODStatPoints;
 	this->PlayerStats = this->MODPlayerStats;
 	this->PistolStats = this->MODPistolStats;
@@ -223,6 +244,16 @@ void UVS_SclopetiatorGI::RefreshPlayerHealth_Internal()
 void UVS_SclopetiatorGI::RefreshStatPoints_Internal()
 {
 	this->StatPoints = this->MODStatPoints;
+}
+
+void UVS_SclopetiatorGI::IncreaseScorePoints_Internal()
+{
+	this->MODScorePoints = this->MODScorePoints + 5000;
+}
+
+void UVS_SclopetiatorGI::DecreaseScorePoints_Internal()
+{
+	this->MODScorePoints = this->MODScorePoints - 5000;
 }
 
 void UVS_SclopetiatorGI::IncrementStatPoints_Internal()
@@ -335,6 +366,16 @@ bool UVS_SclopetiatorGI::CheckStatPoints_Internal()
 	}
 }
 
+bool UVS_SclopetiatorGI::CheckScorePoints_Internal()
+{
+	if (this->MODScorePoints > 5000) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
 bool UVS_SclopetiatorGI::IsHealthValid_Internal()
 {
 	if (this->MODPlayerStats.Health >= 5 || this->MODPlayerStats.Health <= 0) {
@@ -348,6 +389,16 @@ bool UVS_SclopetiatorGI::IsHealthValid_Internal()
 bool UVS_SclopetiatorGI::IsStatPointsValid_Internal()
 {
 	if (this->MODStatPoints < this->StatPoints) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+bool UVS_SclopetiatorGI::IsScorePointsValid_Internal()
+{
+	if (this->MODScorePoints < this->ScorePoints) {
 		return true;
 	}
 	else {
@@ -378,5 +429,5 @@ bool UVS_SclopetiatorGI::AnyFloatChanges_Internal(float param1, float param2)
 
 void UVS_SclopetiatorGI::UpdateScorePoints(int newScorePoints)
 {
-	this->ScorePoints = newScorePoints;
+	this->MODScorePoints = newScorePoints;
 }

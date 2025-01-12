@@ -362,6 +362,65 @@ DEFINE_FUNCTION(UVS_SclopetiatorGI::execAnyIntegerChanges)
 }
 // End Class UVS_SclopetiatorGI Function AnyIntegerChanges
 
+// Begin Class UVS_SclopetiatorGI Function CheckScorePoints
+struct VS_SclopetiatorGI_eventCheckScorePoints_Parms
+{
+	bool ReturnValue;
+
+	/** Constructor, initializes return property only **/
+	VS_SclopetiatorGI_eventCheckScorePoints_Parms()
+		: ReturnValue(false)
+	{
+	}
+};
+static FName NAME_UVS_SclopetiatorGI_CheckScorePoints = FName(TEXT("CheckScorePoints"));
+bool UVS_SclopetiatorGI::CheckScorePoints()
+{
+	VS_SclopetiatorGI_eventCheckScorePoints_Parms Parms;
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_CheckScorePoints),&Parms);
+	return !!Parms.ReturnValue;
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((VS_SclopetiatorGI_eventCheckScorePoints_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(VS_SclopetiatorGI_eventCheckScorePoints_Parms), &Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "CheckScorePoints", nullptr, nullptr, Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::PropPointers), sizeof(VS_SclopetiatorGI_eventCheckScorePoints_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::Function_MetaDataParams) };
+static_assert(sizeof(VS_SclopetiatorGI_eventCheckScorePoints_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execCheckScorePoints)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->CheckScorePoints_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function CheckScorePoints
+
 // Begin Class UVS_SclopetiatorGI Function CheckStatPoints
 struct VS_SclopetiatorGI_eventCheckStatPoints_Parms
 {
@@ -630,6 +689,40 @@ DEFINE_FUNCTION(UVS_SclopetiatorGI::execDecreaseRifleReloadSpeed)
 	P_NATIVE_END;
 }
 // End Class UVS_SclopetiatorGI Function DecreaseRifleReloadSpeed
+
+// Begin Class UVS_SclopetiatorGI Function DecreaseScorePoints
+static FName NAME_UVS_SclopetiatorGI_DecreaseScorePoints = FName(TEXT("DecreaseScorePoints"));
+void UVS_SclopetiatorGI::DecreaseScorePoints()
+{
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_DecreaseScorePoints),NULL);
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseScorePoints_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseScorePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "DecreaseScorePoints", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseScorePoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseScorePoints_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseScorePoints()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseScorePoints_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execDecreaseScorePoints)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->DecreaseScorePoints_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function DecreaseScorePoints
 
 // Begin Class UVS_SclopetiatorGI Function DecreaseShotgunDMG
 static FName NAME_UVS_SclopetiatorGI_DecreaseShotgunDMG = FName(TEXT("DecreaseShotgunDMG"));
@@ -1007,6 +1100,46 @@ DEFINE_FUNCTION(UVS_SclopetiatorGI::execIncreaseRifleReloadSpeed)
 }
 // End Class UVS_SclopetiatorGI Function IncreaseRifleReloadSpeed
 
+// Begin Class UVS_SclopetiatorGI Function IncreaseScorePoints
+static FName NAME_UVS_SclopetiatorGI_IncreaseScorePoints = FName(TEXT("IncreaseScorePoints"));
+void UVS_SclopetiatorGI::IncreaseScorePoints()
+{
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_IncreaseScorePoints),NULL);
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseScorePoints_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//ScorePoints Functions\n" },
+#endif
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "ScorePoints Functions" },
+#endif
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseScorePoints_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "IncreaseScorePoints", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseScorePoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseScorePoints_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseScorePoints()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseScorePoints_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execIncreaseScorePoints)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->IncreaseScorePoints_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function IncreaseScorePoints
+
 // Begin Class UVS_SclopetiatorGI Function IncreaseShotgunDMG
 static FName NAME_UVS_SclopetiatorGI_IncreaseShotgunDMG = FName(TEXT("IncreaseShotgunDMG"));
 void UVS_SclopetiatorGI::IncreaseShotgunDMG()
@@ -1225,6 +1358,65 @@ DEFINE_FUNCTION(UVS_SclopetiatorGI::execIsHealthValid)
 	P_NATIVE_END;
 }
 // End Class UVS_SclopetiatorGI Function IsHealthValid
+
+// Begin Class UVS_SclopetiatorGI Function IsScorePointsValid
+struct VS_SclopetiatorGI_eventIsScorePointsValid_Parms
+{
+	bool ReturnValue;
+
+	/** Constructor, initializes return property only **/
+	VS_SclopetiatorGI_eventIsScorePointsValid_Parms()
+		: ReturnValue(false)
+	{
+	}
+};
+static FName NAME_UVS_SclopetiatorGI_IsScorePointsValid = FName(TEXT("IsScorePointsValid"));
+bool UVS_SclopetiatorGI::IsScorePointsValid()
+{
+	VS_SclopetiatorGI_eventIsScorePointsValid_Parms Parms;
+	ProcessEvent(FindFunctionChecked(NAME_UVS_SclopetiatorGI_IsScorePointsValid),&Parms);
+	return !!Parms.ReturnValue;
+}
+struct Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
+	};
+#endif // WITH_METADATA
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+void Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((VS_SclopetiatorGI_eventIsScorePointsValid_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(VS_SclopetiatorGI_eventIsScorePointsValid_Parms), &Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UVS_SclopetiatorGI, nullptr, "IsScorePointsValid", nullptr, nullptr, Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::PropPointers), sizeof(VS_SclopetiatorGI_eventIsScorePointsValid_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::Function_MetaDataParams), Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::Function_MetaDataParams) };
+static_assert(sizeof(VS_SclopetiatorGI_eventIsScorePointsValid_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UVS_SclopetiatorGI::execIsScorePointsValid)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->IsScorePointsValid_Implementation();
+	P_NATIVE_END;
+}
+// End Class UVS_SclopetiatorGI Function IsScorePointsValid
 
 // Begin Class UVS_SclopetiatorGI Function IsStatPointsValid
 struct VS_SclopetiatorGI_eventIsStatPointsValid_Parms
@@ -1492,6 +1684,7 @@ void UVS_SclopetiatorGI::StaticRegisterNativesUVS_SclopetiatorGI()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "AnyFloatChanges", &UVS_SclopetiatorGI::execAnyFloatChanges },
 		{ "AnyIntegerChanges", &UVS_SclopetiatorGI::execAnyIntegerChanges },
+		{ "CheckScorePoints", &UVS_SclopetiatorGI::execCheckScorePoints },
 		{ "CheckStatPoints", &UVS_SclopetiatorGI::execCheckStatPoints },
 		{ "DecreasePistolDMG", &UVS_SclopetiatorGI::execDecreasePistolDMG },
 		{ "DecreasePistolReloadSpeed", &UVS_SclopetiatorGI::execDecreasePistolReloadSpeed },
@@ -1499,6 +1692,7 @@ void UVS_SclopetiatorGI::StaticRegisterNativesUVS_SclopetiatorGI()
 		{ "DecreasePlayerMovement", &UVS_SclopetiatorGI::execDecreasePlayerMovement },
 		{ "DecreaseRifleDMG", &UVS_SclopetiatorGI::execDecreaseRifleDMG },
 		{ "DecreaseRifleReloadSpeed", &UVS_SclopetiatorGI::execDecreaseRifleReloadSpeed },
+		{ "DecreaseScorePoints", &UVS_SclopetiatorGI::execDecreaseScorePoints },
 		{ "DecreaseShotgunDMG", &UVS_SclopetiatorGI::execDecreaseShotgunDMG },
 		{ "DecreaseShotgunReloadSpeed", &UVS_SclopetiatorGI::execDecreaseShotgunReloadSpeed },
 		{ "DecrementPlayerHealth", &UVS_SclopetiatorGI::execDecrementPlayerHealth },
@@ -1509,11 +1703,13 @@ void UVS_SclopetiatorGI::StaticRegisterNativesUVS_SclopetiatorGI()
 		{ "IncreasePlayerMovement", &UVS_SclopetiatorGI::execIncreasePlayerMovement },
 		{ "IncreaseRifleDMG", &UVS_SclopetiatorGI::execIncreaseRifleDMG },
 		{ "IncreaseRifleReloadSpeed", &UVS_SclopetiatorGI::execIncreaseRifleReloadSpeed },
+		{ "IncreaseScorePoints", &UVS_SclopetiatorGI::execIncreaseScorePoints },
 		{ "IncreaseShotgunDMG", &UVS_SclopetiatorGI::execIncreaseShotgunDMG },
 		{ "IncreaseShotgunReloadSpeed", &UVS_SclopetiatorGI::execIncreaseShotgunReloadSpeed },
 		{ "IncrementPlayerHealth", &UVS_SclopetiatorGI::execIncrementPlayerHealth },
 		{ "IncrementStatPoints", &UVS_SclopetiatorGI::execIncrementStatPoints },
 		{ "IsHealthValid", &UVS_SclopetiatorGI::execIsHealthValid },
+		{ "IsScorePointsValid", &UVS_SclopetiatorGI::execIsScorePointsValid },
 		{ "IsStatPointsValid", &UVS_SclopetiatorGI::execIsStatPointsValid },
 		{ "RefreshPlayerHealth", &UVS_SclopetiatorGI::execRefreshPlayerHealth },
 		{ "RefreshStatPoints", &UVS_SclopetiatorGI::execRefreshStatPoints },
@@ -1563,6 +1759,10 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 #if !UE_BUILD_SHIPPING
 		{ "ToolTip", "ScorePoints" },
 #endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MODScorePoints_MetaData[] = {
+		{ "Category", "VS_SclopetiatorGI" },
+		{ "ModuleRelativePath", "VS_SclopetiatorGI.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StatPoints_MetaData[] = {
 		{ "Category", "VS_SclopetiatorGI" },
@@ -1638,6 +1838,7 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnScorePointsModified;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_WaveCount;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ScorePoints;
+	static const UECodeGen_Private::FIntPropertyParams NewProp_MODScorePoints;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_StatPoints;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_MODStatPoints;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PlayerStats;
@@ -1653,6 +1854,7 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_AnyFloatChanges, "AnyFloatChanges" }, // 3305065623
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_AnyIntegerChanges, "AnyIntegerChanges" }, // 2932819926
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_CheckScorePoints, "CheckScorePoints" }, // 1870031055
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_CheckStatPoints, "CheckStatPoints" }, // 565627118
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreasePistolDMG, "DecreasePistolDMG" }, // 3153791609
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreasePistolReloadSpeed, "DecreasePistolReloadSpeed" }, // 1808064985
@@ -1660,6 +1862,7 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreasePlayerMovement, "DecreasePlayerMovement" }, // 1174659643
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleDMG, "DecreaseRifleDMG" }, // 3919403750
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseRifleReloadSpeed, "DecreaseRifleReloadSpeed" }, // 691759416
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseScorePoints, "DecreaseScorePoints" }, // 2085743678
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseShotgunDMG, "DecreaseShotgunDMG" }, // 479468544
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecreaseShotgunReloadSpeed, "DecreaseShotgunReloadSpeed" }, // 3708943530
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_DecrementPlayerHealth, "DecrementPlayerHealth" }, // 1243008120
@@ -1670,11 +1873,13 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreasePlayerMovement, "IncreasePlayerMovement" }, // 644459040
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleDMG, "IncreaseRifleDMG" }, // 1932752731
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseRifleReloadSpeed, "IncreaseRifleReloadSpeed" }, // 3891423739
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseScorePoints, "IncreaseScorePoints" }, // 1077101618
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseShotgunDMG, "IncreaseShotgunDMG" }, // 2361923124
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncreaseShotgunReloadSpeed, "IncreaseShotgunReloadSpeed" }, // 3432445802
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncrementPlayerHealth, "IncrementPlayerHealth" }, // 128978268
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IncrementStatPoints, "IncrementStatPoints" }, // 478417504
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IsHealthValid, "IsHealthValid" }, // 2452959550
+		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IsScorePointsValid, "IsScorePointsValid" }, // 4037472686
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_IsStatPointsValid, "IsStatPointsValid" }, // 563155562
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshPlayerHealth, "RefreshPlayerHealth" }, // 1250163704
 		{ &Z_Construct_UFunction_UVS_SclopetiatorGI_RefreshStatPoints, "RefreshStatPoints" }, // 1635326865
@@ -1691,6 +1896,7 @@ struct Z_Construct_UClass_UVS_SclopetiatorGI_Statics
 const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_OnScorePointsModified = { "OnScorePointsModified", nullptr, (EPropertyFlags)0x0010100010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UVS_SclopetiatorGI, OnScorePointsModified), Z_Construct_UDelegateFunction_Sclopetiator_OnScorePointsModified__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnScorePointsModified_MetaData), NewProp_OnScorePointsModified_MetaData) }; // 876353370
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_WaveCount = { "WaveCount", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UVS_SclopetiatorGI, WaveCount), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WaveCount_MetaData), NewProp_WaveCount_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_ScorePoints = { "ScorePoints", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UVS_SclopetiatorGI, ScorePoints), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ScorePoints_MetaData), NewProp_ScorePoints_MetaData) };
+const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_MODScorePoints = { "MODScorePoints", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UVS_SclopetiatorGI, MODScorePoints), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MODScorePoints_MetaData), NewProp_MODScorePoints_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_StatPoints = { "StatPoints", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UVS_SclopetiatorGI, StatPoints), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StatPoints_MetaData), NewProp_StatPoints_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_MODStatPoints = { "MODStatPoints", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UVS_SclopetiatorGI, MODStatPoints), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MODStatPoints_MetaData), NewProp_MODStatPoints_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_PlayerStats = { "PlayerStats", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UVS_SclopetiatorGI, PlayerStats), Z_Construct_UScriptStruct_FCharacterStats, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerStats_MetaData), NewProp_PlayerStats_MetaData) }; // 3266699264
@@ -1705,6 +1911,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UVS_Sclop
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_OnScorePointsModified,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_WaveCount,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_ScorePoints,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_MODScorePoints,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_StatPoints,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_MODStatPoints,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UVS_SclopetiatorGI_Statics::NewProp_PlayerStats,
@@ -1761,10 +1968,10 @@ struct Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetia
 		{ FFirearmStats::StaticStruct, Z_Construct_UScriptStruct_FFirearmStats_Statics::NewStructOps, TEXT("FirearmStats"), &Z_Registration_Info_UScriptStruct_FirearmStats, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FFirearmStats), 1704484502U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UVS_SclopetiatorGI, UVS_SclopetiatorGI::StaticClass, TEXT("UVS_SclopetiatorGI"), &Z_Registration_Info_UClass_UVS_SclopetiatorGI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVS_SclopetiatorGI), 33131192U) },
+		{ Z_Construct_UClass_UVS_SclopetiatorGI, UVS_SclopetiatorGI::StaticClass, TEXT("UVS_SclopetiatorGI"), &Z_Registration_Info_UClass_UVS_SclopetiatorGI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UVS_SclopetiatorGI), 2482563400U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_2345294929(TEXT("/Script/Sclopetiator"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_58776278(TEXT("/Script/Sclopetiator"),
 	Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_itsno_source_repos_Sclopetiator_Sclopetiator_Source_Sclopetiator_VS_SclopetiatorGI_h_Statics::ScriptStructInfo),
 	nullptr, 0);

@@ -66,6 +66,12 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void RefreshStatPoints();
 
+	//ScorePoints Functions
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void IncreaseScorePoints();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	void DecreaseScorePoints();
+
 	//StatPoints Functions
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	void IncrementStatPoints();
@@ -132,9 +138,13 @@ public:
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	bool CheckStatPoints();
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	bool CheckScorePoints();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	bool IsHealthValid();
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	bool IsStatPointsValid();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+	bool IsScorePointsValid();
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	bool AnyIntegerChanges(int param1, int param2);
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
@@ -152,6 +162,8 @@ protected:
 	//ScorePoints
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int ScorePoints;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int MODScorePoints;
 
 	//StatPoints
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -200,6 +212,10 @@ protected:
 	//Refresh Stat Points
 	virtual void RefreshStatPoints_Internal();
 
+	//ScorePoints Functions
+	virtual void IncreaseScorePoints_Internal();
+	virtual void DecreaseScorePoints_Internal();
+
 	//StatPoints Functions
 	virtual void IncrementStatPoints_Internal();
 	virtual void DecrementStatPoints_Internal();
@@ -242,8 +258,10 @@ protected:
 
 	//Functions:
 	virtual bool CheckStatPoints_Internal();
+	virtual bool CheckScorePoints_Internal();
 	virtual bool IsHealthValid_Internal();
 	virtual bool IsStatPointsValid_Internal();
+	virtual bool IsScorePointsValid_Internal();
 	virtual bool AnyIntegerChanges_Internal(int param1, int param2);
 	virtual bool AnyFloatChanges_Internal(float param1, float param2);
 };
