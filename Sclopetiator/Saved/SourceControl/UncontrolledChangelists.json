@@ -15,7 +15,10 @@
 				"C:/Users/itsno/Downloads/Sclopetiator-main/Sclopetiator-main/Sclopetiator/Content/Sclopetiator/SclopetiatorLevel.umap",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Stats.uasset",
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/__ExternalActors__/FirstPerson/Maps/FirstPersonMap/9/8W/SR9WTE6WURCE7CEL4VPDZ1.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_WaveChecker.uasset"
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_WaveChecker.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/FirstPerson/Blueprints/BP_FirstPersonPlayerController.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/FirstPerson/Blueprints/BP_FirstPersonCharacter.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Base_Actors/BP_BaseGun.uasset"
 			]
 		}
 	]
