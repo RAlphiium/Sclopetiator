@@ -6,7 +6,10 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/StarterContent/Architecture/Floor_400x400.uasset",
-				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_WaveChecker.uasset"
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_WaveChecker.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/BP_NewMeleeEnemy.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Widget_Blueprints/WBP_Stats.uasset",
+				"C:/Users/itsno/source/repos/Sclopetiator/Sclopetiator/Content/Sclopetiator/Blueprints/Base_Actors/BP_NewBaseEnemy.uasset"
 			]
 		}
 	]
