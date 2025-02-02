@@ -431,3 +431,9 @@ void UVS_SclopetiatorGI::UpdateScorePoints(int newScorePoints)
 {
 	this->MODScorePoints = newScorePoints;
 }
+
+void UVS_SclopetiatorGI::ScorePointsModified(int newScorePoints)
+{
+	this->MODScorePoints = newScorePoints;
+	this->ScorePoints = this->MODScorePoints;
+}

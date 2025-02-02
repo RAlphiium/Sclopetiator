@@ -76,6 +76,7 @@ void ASclopetiatorCharacter::ScorePointsModified_Internal(int IncomingScorePoint
 	this->ScorePoints = this->ScorePoints + IncomingScorePoints;
 	UVS_SclopetiatorGI* GI = Cast<UVS_SclopetiatorGI>(UGameplayStatics::GetGameInstance(GetWorld()));
 	GI->OnScorePointsModified.Broadcast(this->ScorePoints);
+	GI->ScorePointsModified(this->ScorePoints);
 	//GI->OnScorePointsModified.AddDynamic(this, UVS_SclopetiatorGI::UpdateScorePoints(this->ScorePoints));
 	//GI->UpdateScorePoints(this->ScorePoints);
 }
@@ -104,7 +105,8 @@ void ASclopetiatorCharacter::HealthModified_Internal(int DMG)
 	this->Health = this->Health - DMG;
 	OnHealthUpdated.Broadcast(Health);
 	if (this->Health <= 0) {
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Dead.")); //Test
+		this->Health = 0;
+		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Dead.")); //Test
 	}
 }
 

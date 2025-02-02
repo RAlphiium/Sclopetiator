@@ -152,6 +152,8 @@ public:
 
 	void UpdateScorePoints(int newScorePoints);
 
+	void ScorePointsModified(int newScorePoints);
+
 protected:
 	//Attributes:
 

@@ -18,15 +18,15 @@ void AVS_RandomItemDrop::BeginPlay()
 	switch (selection) {
 	case 1:
 		GetWorld()->SpawnActor<AActor>(this->StatPoint.Get(), Location, Rotation, SpawnParams);
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Spawned Stat Point."));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Spawned Stat Point."));
 		break;
 	case 2:
 		GetWorld()->SpawnActor<AActor>(this->Shotgun.Get(), Location, Rotation, SpawnParams);
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Spawned Shotgun."));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Spawned Shotgun."));
 		break;
 	case 3:
 		GetWorld()->SpawnActor<AActor>(this->Rifle.Get(), Location, Rotation, SpawnParams);
-		GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Spawned Rifle (Pistol Placeholder)."));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Cyan, TEXT("Spawned Rifle (Pistol Placeholder)."));
 		break;
 	}
 
